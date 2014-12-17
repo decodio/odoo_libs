@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec.KeyData</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="xmlsec-module.html">Module&nbsp;xmlsec</a> ::
+        Class&nbsp;KeyData
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec.KeyData-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class KeyData</h2>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>id</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+<br />
+Creates new key data of the specified type id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__getattr__"></a><span class="summary-sig"><span class="summary-sig-name">__getattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__setattr__"></a><span class="summary-sig"><span class="summary-sig-name">__setattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#checkId" class="summary-sig-name"><code>checkId</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>id</span>)</span></code>
+<br />
+Returns 1 if data is valid and data's id is equal to dataId.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#checkSize" class="summary-sig-name"><code>checkSize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+Returns 1 if data is valid and data's object has at least size bytes.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#checkUsage" class="summary-sig-name"><code>checkUsage</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>usage</span>)</span></code>
+<br />
+Returns 1 if data is valid and could be used for usage.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#debugDump" class="summary-sig-name"><code>debugDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints key data debug info.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#debugXmlDump" class="summary-sig-name"><code>debugXmlDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints key data debug info in XML format.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#destroy" class="summary-sig-name"><code>destroy</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Destroys the data and frees all allocated memory.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#duplicate" class="summary-sig-name"><code>duplicate</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Creates a duplicate of the given data.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#generate" class="summary-sig-name"><code>generate</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>sizeBits</span>,
+          <span class=summary-sig-arg>type</span>)</span></code>
+<br />
+Generates new key data of given size and type.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#getIdentifier" class="summary-sig-name"><code>getIdentifier</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Gets key data identifier string.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#getName" class="summary-sig-name"><code>getName</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Returns the key data name.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#getSize" class="summary-sig-name"><code>getSize</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Gets key data size.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#getType" class="summary-sig-name"><code>getType</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Gets key data type.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.KeyData-class.html#isValid" class="summary-sig-name"><code>isValid</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Returns 1 if KeyData object is not None and id attribut is not None
+or 0 otherwise.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>id</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>_obj</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+<pre class="literalblock">
+Creates new key data of the specified type id. Caller is responsible for
+destroing returned object with destroy method.
+id      : the data id.
+Returns : the newly key data object or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkId</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>id</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if data is valid and data's id is equal to dataId.
+id : the data Id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkSize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkSize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>size</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if data is valid and data's object has at least size bytes.
+size : the expected size.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkUsage"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkUsage</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>usage</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if data is valid and could be used for usage.
+usage : the data usage.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints key data debug info.
+output : the output FILE.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugXmlDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugXmlDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints key data debug info in XML format.
+output : the output FILE.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="destroy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">destroy</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Destroys the data and frees all allocated memory.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="duplicate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">duplicate</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creates a duplicate of the given data. Caller is responsible for
+destroing returned object with destroy function.
+Returns : the newly key data object or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="generate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">generate</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>sizeBits</span>,
+          <span class=sig-arg>type</span>)</span>
+  </h3>
+<pre class="literalblock">
+Generates new key data of given size and type.
+sizeBits : the desired key data size (in bits).
+type     : the desired key data type.
+Returns  : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getIdentifier"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getIdentifier</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets key data identifier string.
+Returns : key data id string.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getName</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns the key data name.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getSize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getSize</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets key data size.
+Returns : key data size (in bits).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getType"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getType</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets key data type.
+Returns : key data type.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isValid"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isValid</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if KeyData object is not None and id attribut is not None
+or 0 otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

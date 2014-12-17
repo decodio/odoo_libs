@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec.EncCtx</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="xmlsec-module.html">Module&nbsp;xmlsec</a> ::
+        Class&nbsp;EncCtx
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec.EncCtx-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class EncCtx</h2>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>keysMngr</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+<br />
+Creates &lt;enc:EncryptedData/&gt; element processing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__getattr__"></a><span class="summary-sig"><span class="summary-sig-name">__getattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__setattr__"></a><span class="summary-sig"><span class="summary-sig-name">__setattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#binaryEncrypt" class="summary-sig-name"><code>binaryEncrypt</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>tmpl</span>,
+          <span class=summary-sig-arg>data</span>,
+          <span class=summary-sig-arg>dataSize</span>)</span></code>
+<br />
+Encrypts data according to template tmpl.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#copyUserPref" class="summary-sig-name"><code>copyUserPref</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dst</span>)</span></code>
+<br />
+Copies user preference from src context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#debugDump" class="summary-sig-name"><code>debugDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints the debug information about enc context to output.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#debugXmlDump" class="summary-sig-name"><code>debugXmlDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints the debug information about enc context to output in XML format.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#decrypt" class="summary-sig-name"><code>decrypt</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>node</span>)</span></code>
+<br />
+Decrypts node and if necessary replaces node with decrypted data.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#decryptToBuffer" class="summary-sig-name"><code>decryptToBuffer</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>node</span>)</span></code>
+<br />
+Decrypts node data to the encCtx buffer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#destroy" class="summary-sig-name"><code>destroy</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Destroys context object.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#finalize" class="summary-sig-name"><code>finalize</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Cleans up context object.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#initialize" class="summary-sig-name"><code>initialize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>keysMngr</span>)</span></code>
+<br />
+Initializes &lt;enc:EncryptedData/&gt; element processing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#reset" class="summary-sig-name"><code>reset</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Resets enc context object, user settings are not touched.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#uriEncrypt" class="summary-sig-name"><code>uriEncrypt</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>tmpl</span>,
+          <span class=summary-sig-arg>uri</span>)</span></code>
+<br />
+Encrypts data from uri according to template tmpl.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.EncCtx-class.html#xmlEncrypt" class="summary-sig-name"><code>xmlEncrypt</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>tmpl</span>,
+          <span class=summary-sig-arg>node</span>)</span></code>
+<br />
+Encrypts node according to template tmpl.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>keysMngr</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>_obj</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+<pre class="literalblock">
+Creates &lt;enc:EncryptedData/&gt; element processing context. The caller is
+responsible for destroying returned object by calling destroy method.
+keysMngr : the keys manager.
+Returns  : newly context object or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="binaryEncrypt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">binaryEncrypt</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>tmpl</span>,
+          <span class=sig-arg>data</span>,
+          <span class=sig-arg>dataSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encrypts data according to template tmpl.
+tmpl     : the &lt;enc:EncryptedData/&gt; template node.
+data     : the binary buffer.
+dataSize : the data buffer size.
+Returns  : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="copyUserPref"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">copyUserPref</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dst</span>)</span>
+  </h3>
+<pre class="literalblock">
+Copies user preference from src context.
+dst     : the destination context.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints the debug information about enc context to output.
+output : the output file.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugXmlDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugXmlDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints the debug information about enc context to output in XML format.
+output : the output file.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="decrypt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">decrypt</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+Decrypts node and if necessary replaces node with decrypted data.
+node    : the &lt;enc:EncryptedData/&gt; node.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="decryptToBuffer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">decryptToBuffer</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+Decrypts node data to the encCtx buffer.
+node    : the &lt;enc:EncryptedData/&gt; node.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="destroy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">destroy</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Destroys context object.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="finalize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">finalize</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Cleans up context object.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="initialize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">initialize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>keysMngr</span>)</span>
+  </h3>
+<pre class="literalblock">
+Initializes &lt;enc:EncryptedData/&gt; element processing context. The caller
+is responsible for cleaing up returned object by calling finalize method.
+keysMngr : the keys manager.
+Returns  : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="reset"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">reset</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Resets enc context object, user settings are not touched.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="uriEncrypt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">uriEncrypt</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>tmpl</span>,
+          <span class=sig-arg>uri</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encrypts data from uri according to template tmpl.
+tmpl    : the &lt;enc:EncryptedData/&gt; template node.
+uri     : the URI.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xmlEncrypt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xmlEncrypt</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>tmpl</span>,
+          <span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encrypts node according to template tmpl. If requested, node is replaced
+with result &lt;enc:EncryptedData/&gt; node.
+tmpl    : the &lt;enc:EncryptedData/&gt; template node.
+node    : the node for encryption.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

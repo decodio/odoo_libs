@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        Module&nbsp;xmlsec
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec-module.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF MODULE DESCRIPTION =========== -->
+<h2 class="module">Module xmlsec</h2>
+
+<pre class="literalblock">
+PyXMLSec - Python bindings for XML Security library (XMLSec)
+Copyright (C) 2003-2005 Easter-eggs, Valery Febvre
+
+Author   : Valéry Febvre &lt;vfebvre&#64;easter-eggs.com&gt;
+Homepage : http://pyxmlsec.labs.libre-entreprise.org
+
+PyXMLSec was originally developped for Glasnost project.
+http://glasnost.entrouvert.org
+
+In 2003, the development of Glasnost is supported by the French Department of
+Economy, Finance and Industry, as part of the UCIP - Collective Use of Internet
+by SMEs - programme.
+</pre>
+<hr/>
+
+<!-- =========== START OF CLASSES =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Classes</th></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.Base64Ctx-class.html"><code>Base64Ctx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.Buffer-class.html"><code>Buffer</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.DSigCtx-class.html"><code>DSigCtx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.DSigReferenceCtx-class.html"><code>DSigReferenceCtx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.EncCtx-class.html"><code>EncCtx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.Key-class.html"><code>Key</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyData-class.html"><code>KeyData</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyDataId-class.html"><code>KeyDataId</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyInfoCtx-class.html"><code>KeyInfoCtx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyReq-class.html"><code>KeyReq</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeysMngr-class.html"><code>KeysMngr</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyStore-class.html"><code>KeyStore</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.KeyStoreId-class.html"><code>KeyStoreId</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.NodeSet-class.html"><code>NodeSet</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.PtrList-class.html"><code>PtrList</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.PtrListId-class.html"><code>PtrListId</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplCipherReference-class.html"><code>TmplCipherReference</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplEncData-class.html"><code>TmplEncData</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplKeyInfo-class.html"><code>TmplKeyInfo</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplManifest-class.html"><code>TmplManifest</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplObject-class.html"><code>TmplObject</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplReference-class.html"><code>TmplReference</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplRetrievalMethod-class.html"><code>TmplRetrievalMethod</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplSignature-class.html"><code>TmplSignature</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TmplTransform-class.html"><code>TmplTransform</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.Transform-class.html"><code>Transform</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TransformCtx-class.html"><code>TransformCtx</code></a></b></td>
+  <td>&nbsp;</td></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.TransformId-class.html"><code>TransformId</code></a></b></td>
+  <td>&nbsp;</td></tr>
+</table><br />
+
+
+<!-- =========== START OF EXCEPTIONS =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Exceptions</th></tr>
+<tr><td width="15%">
+  <b><a href="xmlsec.Error-class.html"><code>Error</code></a></b></td>
+  <td>&nbsp;</td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Function Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#addChild" class="summary-sig-name"><code>addChild</code></a>(<span class=summary-sig-arg>parent</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Adds a child to the node parent with given name and namespace ns.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#addIDs" class="summary-sig-name"><code>addIDs</code></a>(<span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>cur</span>,
+          <span class=summary-sig-arg>ids</span>)</span></code>
+<br />
+Walks thru all children of the cur node and adds all attributes from the
+ids list to the doc document IDs attributes hash.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#addNextSibling" class="summary-sig-name"><code>addNextSibling</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Adds next sibling to the node node with given name and namespace ns.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#addPrevSibling" class="summary-sig-name"><code>addPrevSibling</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Adds prev sibling to the node node with given name and namespace ns.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#base64Decode" class="summary-sig-name"><code>base64Decode</code></a>(<span class=summary-sig-arg>str</span>)</span></code>
+<br />
+Decodes input base64 encoded string.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#base64Encode" class="summary-sig-name"><code>base64Encode</code></a>(<span class=summary-sig-arg>buf</span>,
+          <span class=summary-sig-arg>columns</span>)</span></code>
+<br />
+Encodes the data from input buffer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#bufferSetDefaultAllocMode" class="summary-sig-name"><code>bufferSetDefaultAllocMode</code></a>(<span class=summary-sig-arg>defAllocMode</span>,
+          <span class=summary-sig-arg>defInitialSize</span>)</span></code>
+<br />
+Sets new global default allocation mode and minimal intial size.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#checkNodeName" class="summary-sig-name"><code>checkNodeName</code></a>(<span class=summary-sig-arg>cur</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Checks that the node has a given name and a given namespace href.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#checkVersion" class="summary-sig-name"><code>checkVersion</code></a>()</span></code>
+<br />
+Returns 1 if the loaded xmlsec library version ABI compatible with the one
+used to compile the caller, 0 if it does not or a negative value if an error occurs.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#checkVersionExact" class="summary-sig-name"><code>checkVersionExact</code></a>()</span></code>
+<br />
+Returns 1 if the loaded xmlsec library version exactly matches the one used
+to compile the caller, 0 if it does not or a negative value if an error occurs.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#checkVersionExt" class="summary-sig-name"><code>checkVersionExt</code></a>(<span class=summary-sig-arg>major</span>,
+          <span class=summary-sig-arg>minor</span>,
+          <span class=summary-sig-arg>subminor</span>,
+          <span class=summary-sig-arg>mode</span>)</span></code>
+<br />
+Checks if the loaded version of xmlsec library could be used.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#createTree" class="summary-sig-name"><code>createTree</code></a>(<span class=summary-sig-arg>rootNodeName</span>,
+          <span class=summary-sig-arg>rootNodeNs</span>)</span></code>
+<br />
+Creates a new XML tree with one root node rootNodeName.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppDefaultKeysMngrAdoptKey" class="summary-sig-name"><code>cryptoAppDefaultKeysMngrAdoptKey</code></a>(<span class=summary-sig-arg>mngr</span>,
+          <span class=summary-sig-arg>key</span>)</span></code>
+<br />
+Adds key to the keys manager mngr created with cryptoAppDefaultKeysMngrInit
+function.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppDefaultKeysMngrInit" class="summary-sig-name"><code>cryptoAppDefaultKeysMngrInit</code></a>(<span class=summary-sig-arg>mngr</span>)</span></code>
+<br />
+Initializes mngr with simple keys store simpleKeysStoreId and a default
+crypto key data stores.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppDefaultKeysMngrLoad" class="summary-sig-name"><code>cryptoAppDefaultKeysMngrLoad</code></a>(<span class=summary-sig-arg>mngr</span>,
+          <span class=summary-sig-arg>uri</span>)</span></code>
+<br />
+Loads XML keys file from uri to the keys manager mngr created with
+cryptoAppDefaultKeysMngrInit function.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppDefaultKeysMngrSave" class="summary-sig-name"><code>cryptoAppDefaultKeysMngrSave</code></a>(<span class=summary-sig-arg>mngr</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>type</span>)</span></code>
+<br />
+Saves keys from mngr to XML keys file.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppGetDefaultPwdCallback" class="summary-sig-name"><code>cryptoAppGetDefaultPwdCallback</code></a>()</span></code>
+<br />
+Gets default password callback.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppInit" class="summary-sig-name"><code>cryptoAppInit</code></a>(<span class=summary-sig-arg>config</span>)</span></code>
+<br />
+General crypto engine initialization.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppKeyCertLoad" class="summary-sig-name"><code>cryptoAppKeyCertLoad</code></a>(<span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>format</span>)</span></code>
+<br />
+Reads the certificate from filename and adds it to key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppKeyLoad" class="summary-sig-name"><code>cryptoAppKeyLoad</code></a>(<span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>format</span>,
+          <span class=summary-sig-arg>pwd</span>,
+          <span class=summary-sig-arg>pwdCallback</span>,
+          <span class=summary-sig-arg>pwdCallbackCtx</span>)</span></code>
+<br />
+Reads key from filename.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppKeysMngrCertLoad" class="summary-sig-name"><code>cryptoAppKeysMngrCertLoad</code></a>(<span class=summary-sig-arg>mngr</span>,
+          <span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>format</span>,
+          <span class=summary-sig-arg>type</span>)</span></code>
+<br />
+Reads cert from filename and adds to the list of trusted or known untrusted
+certs in store.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppPkcs12Load" class="summary-sig-name"><code>cryptoAppPkcs12Load</code></a>(<span class=summary-sig-arg>filename</span>,
+          <span class=summary-sig-arg>pwd</span>,
+          <span class=summary-sig-arg>pwdCallback</span>,
+          <span class=summary-sig-arg>pwdCallbackCtx</span>)</span></code>
+<br />
+Reads key and all associated certificates from the PKCS12 file.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoAppShutdown" class="summary-sig-name"><code>cryptoAppShutdown</code></a>()</span></code>
+<br />
+General crypto engine shutdown.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoInit" class="summary-sig-name"><code>cryptoInit</code></a>()</span></code>
+<br />
+XMLSec library specific crypto engine initialization.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoKeysMngrInit" class="summary-sig-name"><code>cryptoKeysMngrInit</code></a>(<span class=summary-sig-arg>mngr</span>)</span></code>
+<br />
+Adds crypto specific key data stores in keys manager.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#cryptoShutdown" class="summary-sig-name"><code>cryptoShutdown</code></a>()</span></code>
+<br />
+XMLSec library specific crypto engine shutdown.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#dsigReferenceCtxListId" class="summary-sig-name"><code>dsigReferenceCtxListId</code></a>()</span></code>
+<br />
+Returns : &lt;dsig:Reference/&gt; element processing context list id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#errorsSetCallback" class="summary-sig-name"><code>errorsSetCallback</code></a>(<span class=summary-sig-arg>callback</span>)</span></code>
+<br />
+Sets the errors callback function to callback that will be called every
+time an error occurs.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#findChild" class="summary-sig-name"><code>findChild</code></a>(<span class=summary-sig-arg>parent</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Searches a direct child of the parent node having given name and namespace
+href.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#findNode" class="summary-sig-name"><code>findNode</code></a>(<span class=summary-sig-arg>parent</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Searches all children of the parent node having given name and namespace href.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#findParent" class="summary-sig-name"><code>findParent</code></a>(<span class=summary-sig-arg>cur</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Searches the ancestors axis of the cur node for a node having given name
+and namespace href.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#getHex" class="summary-sig-name"><code>getHex</code></a>(<span class=summary-sig-arg>c</span>)</span></code>
+<br />
+Gets the hex value of a character.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#getNextElementNode" class="summary-sig-name"><code>getNextElementNode</code></a>(<span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Seraches for the next element node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#getNodeNsHref" class="summary-sig-name"><code>getNodeNsHref</code></a>(<span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Gets node's namespace href.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#init" class="summary-sig-name"><code>init</code></a>()</span></code>
+<br />
+Initializes XML Security Library.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#isEmptyNode" class="summary-sig-name"><code>isEmptyNode</code></a>(<span class=summary-sig-arg>node</span>)</span></code>
+<br />
+Checks whethere the node is empty (i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#isEmptyString" class="summary-sig-name"><code>isEmptyString</code></a>(<span class=summary-sig-arg>str</span>)</span></code>
+<br />
+Checks whethere the str is empty (i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#isHex" class="summary-sig-name"><code>isHex</code></a>(<span class=summary-sig-arg>c</span>)</span></code>
+<br />
+Returns 1 if a character is a hex digit or 0 otherwise.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyCopy" class="summary-sig-name"><code>keyCopy</code></a>(<span class=summary-sig-arg>keyDst</span>,
+          <span class=summary-sig-arg>keySrc</span>)</span></code>
+<br />
+Copies key data from keySrc to keyDst.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataAesId" class="summary-sig-name"><code>keyDataAesId</code></a>()</span></code>
+<br />
+The AES key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataBinRead" class="summary-sig-name"><code>keyDataBinRead</code></a>(<span class=summary-sig-arg>id</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>buf</span>,
+          <span class=summary-sig-arg>bufSize</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Reads the key data of klass id from binary buffer buf to key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataBinWrite" class="summary-sig-name"><code>keyDataBinWrite</code></a>(<span class=summary-sig-arg>id</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>buf</span>,
+          <span class=summary-sig-arg>bufSize</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Writes the key data of klass id from the key to a binary buffer buf.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataDesId" class="summary-sig-name"><code>keyDataDesId</code></a>()</span></code>
+<br />
+The DES key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataDsaId" class="summary-sig-name"><code>keyDataDsaId</code></a>()</span></code>
+<br />
+The DSA key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataEncryptedKeyId" class="summary-sig-name"><code>keyDataEncryptedKeyId</code></a>()</span></code>
+<br />
+The &lt;enc:EncryptedKey/&gt; element key data id
+(http://www.w3.org/TR/xmlenc-core/sec-EncryptedKey)
+
+The EncryptedKey element is used to transport encryption keys from the
+originator to a known recipient(s).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataHmacId" class="summary-sig-name"><code>keyDataHmacId</code></a>()</span></code>
+<br />
+The HMAC key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataIdsGet" class="summary-sig-name"><code>keyDataIdsGet</code></a>()</span></code>
+<br />
+Gets global registered key data klasses list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataIdsInit" class="summary-sig-name"><code>keyDataIdsInit</code></a>()</span></code>
+<br />
+Initializes the key data klasses.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataIdsRegister" class="summary-sig-name"><code>keyDataIdsRegister</code></a>(<span class=summary-sig-arg>id</span>)</span></code>
+<br />
+Registers id in the global list of key data klasses.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataIdsRegisterDefault" class="summary-sig-name"><code>keyDataIdsRegisterDefault</code></a>()</span></code>
+<br />
+Registers default (implemented by XML Security Library) key data klasses:
+&lt;dsig:KeyName/&gt; element processing klass, &lt;dsig:KeyValue/&gt; element
+processing klass, ...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataIdsShutdown" class="summary-sig-name"><code>keyDataIdsShutdown</code></a>()</span></code>
+<br />
+Shuts down the keys data klasses.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataNameId" class="summary-sig-name"><code>keyDataNameId</code></a>()</span></code>
+<br />
+The &lt;dsig:KeyName/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-KeyName)
+
+The KeyName element contains a string value (in which white space is
+significant) which may be used by the signer to communicate a key identifier
+to the recipient.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataRawX509CertId" class="summary-sig-name"><code>keyDataRawX509CertId</code></a>()</span></code>
+<br />
+The raw X509 cert key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataRetrievalMethodId" class="summary-sig-name"><code>keyDataRetrievalMethodId</code></a>()</span></code>
+<br />
+The &lt;dsig:RetrievalMethod/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-RetrievalMethod)
+
+A RetrievalMethod element within KeyInfo is used to convey a reference to
+KeyInfo information that is stored at another location.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataRsaId" class="summary-sig-name"><code>keyDataRsaId</code></a>()</span></code>
+<br />
+The RSA key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataValueId" class="summary-sig-name"><code>keyDataValueId</code></a>()</span></code>
+<br />
+The &lt;dsig:KeyValue/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-KeyValue)
+
+The KeyValue element contains a single public key that may be useful in
+validating the signature.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataX509Id" class="summary-sig-name"><code>keyDataX509Id</code></a>()</span></code>
+<br />
+The X509 key data id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataXmlRead" class="summary-sig-name"><code>keyDataXmlRead</code></a>(<span class=summary-sig-arg>id</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Reads the key data of klass id from XML node and adds them to key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyDataXmlWrite" class="summary-sig-name"><code>keyDataXmlWrite</code></a>(<span class=summary-sig-arg>id</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Writes the key data of klass id from key to an XML node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyGenerate" class="summary-sig-name"><code>keyGenerate</code></a>(<span class=summary-sig-arg>dataId</span>,
+          <span class=summary-sig-arg>sizeBits</span>,
+          <span class=summary-sig-arg>type</span>)</span></code>
+<br />
+Generates new key of requested klass dataId and type.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyGenerateByName" class="summary-sig-name"><code>keyGenerateByName</code></a>(<span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>sizeBits</span>,
+          <span class=summary-sig-arg>type</span>)</span></code>
+<br />
+Generates new key of requested klass and type.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyInfoCtxCopyUserPref" class="summary-sig-name"><code>keyInfoCtxCopyUserPref</code></a>(<span class=summary-sig-arg>dst</span>,
+          <span class=summary-sig-arg>src</span>)</span></code>
+<br />
+Copies user preferences from src context to dst context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyInfoNodeRead" class="summary-sig-name"><code>keyInfoNodeRead</code></a>(<span class=summary-sig-arg>keyInfoNode</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Parses the &lt;dsig:KeyInfo/&gt; element keyInfoNode, extracts the key data and
+stores into key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyInfoNodeWrite" class="summary-sig-name"><code>keyInfoNodeWrite</code></a>(<span class=summary-sig-arg>keyInfoNode</span>,
+          <span class=summary-sig-arg>key</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Writes the key into the &lt;dsig:KeyInfo/&gt; element template keyInfoNode.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyPtrListId" class="summary-sig-name"><code>keyPtrListId</code></a>()</span></code>
+<br />
+Returns the keys list klass.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyReadBinaryFile" class="summary-sig-name"><code>keyReadBinaryFile</code></a>(<span class=summary-sig-arg>dataId</span>,
+          <span class=summary-sig-arg>filename</span>)</span></code>
+<br />
+Reads the key value of klass dataId from a binary file filename.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyReadBuffer" class="summary-sig-name"><code>keyReadBuffer</code></a>(<span class=summary-sig-arg>dataId</span>,
+          <span class=summary-sig-arg>buffer</span>)</span></code>
+<br />
+Reads the key value of klass dataId from a buffer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyReadMemory" class="summary-sig-name"><code>keyReadMemory</code></a>(<span class=summary-sig-arg>dataId</span>,
+          <span class=summary-sig-arg>data</span>,
+          <span class=summary-sig-arg>dataSize</span>)</span></code>
+<br />
+Reads the key value of klass dataId from a memory block data.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keyReqCopy" class="summary-sig-name"><code>keyReqCopy</code></a>(<span class=summary-sig-arg>dst</span>,
+          <span class=summary-sig-arg>src</span>)</span></code>
+<br />
+Copies key requirements from src object to dst object.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#keysMngrGetKey" class="summary-sig-name"><code>keysMngrGetKey</code></a>(<span class=summary-sig-arg>keyInfoNode</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Reads the &lt;dsig:KeyInfo/&gt; node keyInfoNode and extracts the key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#nodeGetName" class="summary-sig-name"><code>nodeGetName</code></a>(<span class=summary-sig-arg>node</span>)</span></code>
+<br />
+Gets node's name.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#nodeSetAdd" class="summary-sig-name"><code>nodeSetAdd</code></a>(<span class=summary-sig-arg>nset</span>,
+          <span class=summary-sig-arg>newNSet</span>,
+          <span class=summary-sig-arg>op</span>)</span></code>
+<br />
+Adds newNSet to the nset using operation op.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#nodeSetAddList" class="summary-sig-name"><code>nodeSetAddList</code></a>(<span class=summary-sig-arg>nset</span>,
+          <span class=summary-sig-arg>newNSet</span>,
+          <span class=summary-sig-arg>op</span>)</span></code>
+<br />
+Adds newNSet to the nset as child using operation op.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#nodeSetGetChildren" class="summary-sig-name"><code>nodeSetGetChildren</code></a>(<span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>parent</span>,
+          <span class=summary-sig-arg>withComments</span>,
+          <span class=summary-sig-arg>invert</span>)</span></code>
+<br />
+Creates a new nodes set that contains:
+- if withComments is not 0 and invert is 0: all nodes in the parent subtree;
+- if withComments is 0 and invert is 0: all nodes in the parent subtree
+except comment nodes;
+- if withComments is not 0 and invert not is 0: all nodes in the doc except
+nodes in the parent subtree;
+- if withComments is 0 and invert is 0: all nodes in the doc except nodes in
+the parent subtree and comment nodes.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#parseFile" class="summary-sig-name"><code>parseFile</code></a>(<span class=summary-sig-arg>filename</span>)</span></code>
+<br />
+Loads XML Doc from file filename.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#parseMemory" class="summary-sig-name"><code>parseMemory</code></a>(<span class=summary-sig-arg>buffer</span>,
+          <span class=summary-sig-arg>size</span>,
+          <span class=summary-sig-arg>recovery</span>)</span></code>
+<br />
+Loads XML Doc from memory.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#parseMemoryExt" class="summary-sig-name"><code>parseMemoryExt</code></a>(<span class=summary-sig-arg>prefix</span>,
+          <span class=summary-sig-arg>prefixSize</span>,
+          <span class=summary-sig-arg>buffer</span>,
+          <span class=summary-sig-arg>bufferSize</span>,
+          <span class=summary-sig-arg>postfix</span>,
+          <span class=summary-sig-arg>postfixSize</span>)</span></code>
+<br />
+Loads XML Doc from 3 chunks of memory: prefix, buffer and postfix.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#ptrListCopy" class="summary-sig-name"><code>ptrListCopy</code></a>(<span class=summary-sig-arg>dst</span>,
+          <span class=summary-sig-arg>src</span>)</span></code>
+<br />
+Copies src list items to dst list using duplicateItem method of the list klass.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#replaceContent" class="summary-sig-name"><code>replaceContent</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>newNode</span>)</span></code>
+<br />
+Swaps the content of node and newNode.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#replaceNode" class="summary-sig-name"><code>replaceNode</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>newNode</span>)</span></code>
+<br />
+Swaps the node and newNode in the XML tree.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#replaceNodeBuffer" class="summary-sig-name"><code>replaceNodeBuffer</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>buffer</span>,
+          <span class=summary-sig-arg>size</span>)</span></code>
+<br />
+Swaps the node and the parsed XML data from the buffer in the XML tree.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#shutdown" class="summary-sig-name"><code>shutdown</code></a>()</span></code>
+<br />
+Clean ups the XML Security Library.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#simpleKeysStoreId" class="summary-sig-name"><code>simpleKeysStoreId</code></a>()</span></code>
+<br />
+Returns a simple keys store klass id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformAes128CbcId" class="summary-sig-name"><code>transformAes128CbcId</code></a>()</span></code>
+<br />
+AES 128 CBC encryption transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformAes192CbcId" class="summary-sig-name"><code>transformAes192CbcId</code></a>()</span></code>
+<br />
+AES 192 CBC encryption transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformAes256CbcId" class="summary-sig-name"><code>transformAes256CbcId</code></a>()</span></code>
+<br />
+AES 256 CBC encryption transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformBase64Id" class="summary-sig-name"><code>transformBase64Id</code></a>()</span></code>
+<br />
+The Base64 transform id (http://www.w3.org/TR/xmldsig-core/sec-Base-64).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformDes3CbcId" class="summary-sig-name"><code>transformDes3CbcId</code></a>()</span></code>
+<br />
+Triple DES CBC encryption transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformDsaSha1Id" class="summary-sig-name"><code>transformDsaSha1Id</code></a>()</span></code>
+<br />
+The DSA-SHA1 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformEnvelopedId" class="summary-sig-name"><code>transformEnvelopedId</code></a>()</span></code>
+<br />
+The enveloped transform id
+(http://www.w3.org/TR/xmldsig-core/sec-EnvelopedSignature).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformExclC14NId" class="summary-sig-name"><code>transformExclC14NId</code></a>()</span></code>
+<br />
+Exclusive canoncicalization that ommits comments transform id
+(http://www.w3.org/TR/xml-exc-c14n/).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformExclC14NWithCommentsId" class="summary-sig-name"><code>transformExclC14NWithCommentsId</code></a>()</span></code>
+<br />
+Exclusive canoncicalization that includes comments transform id
+(http://www.w3.org/TR/xml-exc-c14n/).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacMd5Id" class="summary-sig-name"><code>transformHmacMd5Id</code></a>()</span></code>
+<br />
+The HMAC-MD5 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacRipemd160Id" class="summary-sig-name"><code>transformHmacRipemd160Id</code></a>()</span></code>
+<br />
+The HMAC-RIPEMD160 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacSha1Id" class="summary-sig-name"><code>transformHmacSha1Id</code></a>()</span></code>
+<br />
+The HMAC-SHA1 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacSha224Id" class="summary-sig-name"><code>transformHmacSha224Id</code></a>()</span></code>
+<br />
+The HMAC-SHA224 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacSha256Id" class="summary-sig-name"><code>transformHmacSha256Id</code></a>()</span></code>
+<br />
+The HMAC-SHA256 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacSha384Id" class="summary-sig-name"><code>transformHmacSha384Id</code></a>()</span></code>
+<br />
+The HMAC-SHA384 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformHmacSha512Id" class="summary-sig-name"><code>transformHmacSha512Id</code></a>()</span></code>
+<br />
+The HMAC-SHA512 transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformInclC14NId" class="summary-sig-name"><code>transformInclC14NId</code></a>()</span></code>
+<br />
+Inclusive (regular) canonicalization that omits comments transform id
+(http://www.w3.org/TR/xmldsig-core/sec-c14nAlg and
+http://www.w3.org/TR/2001/REC-xml-c14n-20010315).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformInclC14NWithCommentsId" class="summary-sig-name"><code>transformInclC14NWithCommentsId</code></a>()</span></code>
+<br />
+Inclusive (regular) canonicalization that includes comments transform id
+(http://www.w3.org/TR/xmldsig-core/sec-c14nAlg and
+http://www.w3.org/TR/2001/REC-xml-c14n-20010315).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformKWAes128Id" class="summary-sig-name"><code>transformKWAes128Id</code></a>()</span></code>
+<br />
+The AES-128 kew wrapper transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformKWAes192Id" class="summary-sig-name"><code>transformKWAes192Id</code></a>()</span></code>
+<br />
+The AES-192 kew wrapper transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformKWAes256Id" class="summary-sig-name"><code>transformKWAes256Id</code></a>()</span></code>
+<br />
+The AES-256 kew wrapper transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformKWDes3Id" class="summary-sig-name"><code>transformKWDes3Id</code></a>()</span></code>
+<br />
+The Triple DES key wrapper transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformMd5Id" class="summary-sig-name"><code>transformMd5Id</code></a>()</span></code>
+<br />
+The MD5 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformMemBufGetBuffer" class="summary-sig-name"><code>transformMemBufGetBuffer</code></a>(<span class=summary-sig-arg>transform</span>)</span></code>
+<br />
+Gets the memory buffer transform buffer.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformMemBufId" class="summary-sig-name"><code>transformMemBufId</code></a>()</span></code>
+<br />
+Returns the memory buffer transform id (used to store the data that go
+through it).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRemoveXmlTagsC14NId" class="summary-sig-name"><code>transformRemoveXmlTagsC14NId</code></a>()</span></code>
+<br />
+The 'remove xml tags' transform id (used before base64 transforms)
+(http://www.w3.org/TR/xmldsig-core/sec-Base-64).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRipemd160Id" class="summary-sig-name"><code>transformRipemd160Id</code></a>()</span></code>
+<br />
+RIPEMD-160 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaMd5Id" class="summary-sig-name"><code>transformRsaMd5Id</code></a>()</span></code>
+<br />
+The RSA-MD5 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaOaepId" class="summary-sig-name"><code>transformRsaOaepId</code></a>()</span></code>
+<br />
+The RSA-OAEP key transport transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaPkcs1Id" class="summary-sig-name"><code>transformRsaPkcs1Id</code></a>()</span></code>
+<br />
+The RSA-PKCS1 key transport transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaRipemd160Id" class="summary-sig-name"><code>transformRsaRipemd160Id</code></a>()</span></code>
+<br />
+The RSA-RIPEMD160 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaSha1Id" class="summary-sig-name"><code>transformRsaSha1Id</code></a>()</span></code>
+<br />
+The RSA-SHA1 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaSha224Id" class="summary-sig-name"><code>transformRsaSha224Id</code></a>()</span></code>
+<br />
+The RSA-SHA224 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaSha256Id" class="summary-sig-name"><code>transformRsaSha256Id</code></a>()</span></code>
+<br />
+The RSA-SHA256 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaSha384Id" class="summary-sig-name"><code>transformRsaSha384Id</code></a>()</span></code>
+<br />
+The RSA-SHA384 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformRsaSha512Id" class="summary-sig-name"><code>transformRsaSha512Id</code></a>()</span></code>
+<br />
+The RSA-SHA512 signature transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformSha1Id" class="summary-sig-name"><code>transformSha1Id</code></a>()</span></code>
+<br />
+SHA-1 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformSha224Id" class="summary-sig-name"><code>transformSha224Id</code></a>()</span></code>
+<br />
+The SHA224 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformSha256Id" class="summary-sig-name"><code>transformSha256Id</code></a>()</span></code>
+<br />
+The SHA256 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformSha384Id" class="summary-sig-name"><code>transformSha384Id</code></a>()</span></code>
+<br />
+The SHA384 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformSha512Id" class="summary-sig-name"><code>transformSha512Id</code></a>()</span></code>
+<br />
+The SHA512 digest transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformUriTypeCheck" class="summary-sig-name"><code>transformUriTypeCheck</code></a>(<span class=summary-sig-arg>type</span>,
+          <span class=summary-sig-arg>uri</span>)</span></code>
+<br />
+Checks if uri matches expected type type.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformVisa3DHackId" class="summary-sig-name"><code>transformVisa3DHackId</code></a>()</span></code>
+<br />
+Selects node subtree by given node id string.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformXmlParserId" class="summary-sig-name"><code>transformXmlParserId</code></a>()</span></code>
+<br />
+Returns the XML parser transform id.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformXPath2Id" class="summary-sig-name"><code>transformXPath2Id</code></a>()</span></code>
+<br />
+The XPath2 transform id (http://www.w3.org/TR/xmldsig-filter2/).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformXPathId" class="summary-sig-name"><code>transformXPathId</code></a>()</span></code>
+<br />
+The XPath transform evaluates given XPath expression and intersects the
+result with the previous nodes set.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformXPointerId" class="summary-sig-name"><code>transformXPointerId</code></a>()</span></code>
+<br />
+The XPointer transform id
+(http://www.ietf.org/internet-drafts/draft-eastlake-xmldsig-uri-02.txt).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#transformXsltId" class="summary-sig-name"><code>transformXsltId</code></a>()</span></code>
+<br />
+XSLT transform id (http://www.w3.org/TR/xmldsig-core/sec-XSLT).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#x509DataGetNodeContent" class="summary-sig-name"><code>x509DataGetNodeContent</code></a>(<span class=summary-sig-arg>node</span>,
+          <span class=summary-sig-arg>deleteChildren</span>,
+          <span class=summary-sig-arg>keyInfoCtx</span>)</span></code>
+<br />
+Reads the contents of &lt;dsig:X509Data/&gt; node and returns it as a bits mask.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec-module.html#x509StoreId" class="summary-sig-name"><code>x509StoreId</code></a>()</span></code>
+<br />
+The X509 certificates key data store id.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Function Details</th></tr>
+</table>
+
+<a name="addChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addChild</span>(<span class=sig-arg>parent</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds a child to the node parent with given name and namespace ns.
+parent  : the XML node.
+name    : the new node name.
+ns      : the new node namespace.
+Returns : the new node or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addIDs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addIDs</span>(<span class=sig-arg>doc</span>,
+          <span class=sig-arg>cur</span>,
+          <span class=sig-arg>ids</span>)</span>
+  </h3>
+<pre class="literalblock">
+Walks thru all children of the cur node and adds all attributes from the
+ids list to the doc document IDs attributes hash.
+doc : the XML document.
+cur : the XML node.
+ids : the list of ID attributes.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addNextSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addNextSibling</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds next sibling to the node node with given name and namespace ns.
+node    : the XML node.
+name    : the new node name.
+ns      : the new node namespace.
+Returns : the new node or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addPrevSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addPrevSibling</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds prev sibling to the node node with given name and namespace ns.
+node    : the XML node.
+name    : the new node name.
+ns      : the new node namespace.
+Returns : the new node or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="base64Decode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">base64Decode</span>(<span class=sig-arg>str</span>)</span>
+  </h3>
+<pre class="literalblock">
+Decodes input base64 encoded string.
+str     : the input buffer with base64 encoded string.
+Returns : a string with decoded data or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="base64Encode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">base64Encode</span>(<span class=sig-arg>buf</span>,
+          <span class=sig-arg>columns</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encodes the data from input buffer.
+buf     : the input buffer.
+columns : the output max line length (if 0 then no line breaks would be
+inserted)
+Returns : a string with base64 encoded data or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="bufferSetDefaultAllocMode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">bufferSetDefaultAllocMode</span>(<span class=sig-arg>defAllocMode</span>,
+          <span class=sig-arg>defInitialSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets new global default allocation mode and minimal intial size.
+defAllocMode   : the new default buffer allocation mode.
+defInitialSize : the new default buffer minimal intial size.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkNodeName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkNodeName</span>(<span class=sig-arg>cur</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks that the node has a given name and a given namespace href.
+cur     : the XML node.
+name    : the name,
+ns      : the namespace href.
+Returns : 1 if the node matches or 0 otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkVersion"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkVersion</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if the loaded xmlsec library version ABI compatible with the one
+used to compile the caller, 0 if it does not or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkVersionExact"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkVersionExact</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if the loaded xmlsec library version exactly matches the one used
+to compile the caller, 0 if it does not or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="checkVersionExt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">checkVersionExt</span>(<span class=sig-arg>major</span>,
+          <span class=sig-arg>minor</span>,
+          <span class=sig-arg>subminor</span>,
+          <span class=sig-arg>mode</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks if the loaded version of xmlsec library could be used.
+major    : the major version number.
+minor    : the minor version number.
+subminor : the subminor version number.
+mode     : the version check mode.
+Returns  : 1 if the loaded xmlsec library version is OK to use 0 if it is
+not or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="createTree"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">createTree</span>(<span class=sig-arg>rootNodeName</span>,
+          <span class=sig-arg>rootNodeNs</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creates a new XML tree with one root node rootNodeName.
+rootNodeName : the root node name.
+rootNodeNs   : the root node namespace (otpional).
+Returns      : the newly created tree or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppDefaultKeysMngrAdoptKey"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppDefaultKeysMngrAdoptKey</span>(<span class=sig-arg>mngr</span>,
+          <span class=sig-arg>key</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds key to the keys manager mngr created with cryptoAppDefaultKeysMngrInit
+function.
+  - mngr : the keys manager.
+  - key  : the key.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppDefaultKeysMngrInit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppDefaultKeysMngrInit</span>(<span class=sig-arg>mngr</span>)</span>
+  </h3>
+<pre class="literalblock">
+Initializes mngr with simple keys store simpleKeysStoreId and a default
+crypto key data stores.
+mngr    : the keys manager.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppDefaultKeysMngrLoad"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppDefaultKeysMngrLoad</span>(<span class=sig-arg>mngr</span>,
+          <span class=sig-arg>uri</span>)</span>
+  </h3>
+<pre class="literalblock">
+Loads XML keys file from uri to the keys manager mngr created with
+cryptoAppDefaultKeysMngrInit function.
+mngr    : the keys manager.
+uri     : the uri.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppDefaultKeysMngrSave"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppDefaultKeysMngrSave</span>(<span class=sig-arg>mngr</span>,
+          <span class=sig-arg>filename</span>,
+          <span class=sig-arg>type</span>)</span>
+  </h3>
+<pre class="literalblock">
+Saves keys from mngr to XML keys file.
+mngr     : the keys manager.
+filename : the destination filename.
+type     : the type of keys to save (public/private/symmetric).
+Returns  : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppGetDefaultPwdCallback"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppGetDefaultPwdCallback</span>()</span>
+  </h3>
+<pre class="literalblock">
+Gets default password callback.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppInit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppInit</span>(<span class=sig-arg>config</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+General crypto engine initialization. This function is used by XMLSec
+command line utility and called before init function.
+config  : the path to crypto library configuration.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppKeyCertLoad"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppKeyCertLoad</span>(<span class=sig-arg>key</span>,
+          <span class=sig-arg>filename</span>,
+          <span class=sig-arg>format</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the certificate from filename and adds it to key.
+key      : the key.
+filename : the certificate filename.
+format   : the certificate file format.
+Returns  : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppKeyLoad"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppKeyLoad</span>(<span class=sig-arg>filename</span>,
+          <span class=sig-arg>format</span>,
+          <span class=sig-arg>pwd</span>,
+          <span class=sig-arg>pwdCallback</span>,
+          <span class=sig-arg>pwdCallbackCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads key from filename.
+filename       : the key filename.
+format         : the key file format.
+pwd            : the key file password.
+pwdCallback    : the key password callback.
+pwdCallbackCtx : the user context for password callback.
+Returns        : the key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppKeysMngrCertLoad"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppKeysMngrCertLoad</span>(<span class=sig-arg>mngr</span>,
+          <span class=sig-arg>filename</span>,
+          <span class=sig-arg>format</span>,
+          <span class=sig-arg>type</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads cert from filename and adds to the list of trusted or known untrusted
+certs in store.
+mngr     : the keys manager.
+filename : the certificate file.
+format   : the certificate file format.
+type     : the flag that indicates if the certificate in filename trusted or not.
+Returns  : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppPkcs12Load"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppPkcs12Load</span>(<span class=sig-arg>filename</span>,
+          <span class=sig-arg>pwd</span>,
+          <span class=sig-arg>pwdCallback</span>,
+          <span class=sig-arg>pwdCallbackCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads key and all associated certificates from the PKCS12 file.
+For uniformity, call cryptoAppKeyLoad instead of this function.
+Pass in format=xmlsec.KeyDataFormatPkcs12.
+filename       : the PKCS12 key filename.
+pwd            : the PKCS12 file password.
+pwdCallback    : the password callback.
+pwdCallbackCtx : the user context for password callback.
+Returns        : the key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoAppShutdown"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoAppShutdown</span>()</span>
+  </h3>
+<pre class="literalblock">
+General crypto engine shutdown. This function is used by XMLSec command
+line utility and called after shutdown function.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoInit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoInit</span>()</span>
+  </h3>
+<pre class="literalblock">
+XMLSec library specific crypto engine initialization.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoKeysMngrInit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoKeysMngrInit</span>(<span class=sig-arg>mngr</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds crypto specific key data stores in keys manager.
+mngr    : the keys manager.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="cryptoShutdown"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">cryptoShutdown</span>()</span>
+  </h3>
+<pre class="literalblock">
+XMLSec library specific crypto engine shutdown.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="dsigReferenceCtxListId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">dsigReferenceCtxListId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns : &lt;dsig:Reference/&gt; element processing context list id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="errorsSetCallback"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">errorsSetCallback</span>(<span class=sig-arg>callback</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the errors callback function to callback that will be called every
+time an error occurs.
+callback : the new errors callback function.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="findChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">findChild</span>(<span class=sig-arg>parent</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches a direct child of the parent node having given name and namespace
+href.
+parent  : the XML node.
+name    : the name.
+ns      : the namespace href (may be None).
+Returns : the found node or None if an error occurs or node is not found.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="findNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">findNode</span>(<span class=sig-arg>parent</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches all children of the parent node having given name and namespace href.
+parent  : the XML node.
+name    : the name.
+ns      : the namespace href (may be None).
+Returns : the found node or None if an error occurs or node is not found.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="findParent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">findParent</span>(<span class=sig-arg>cur</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>ns</span>=<span class=sig-default>None</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches the ancestors axis of the cur node for a node having given name
+and namespace href.
+cur     : the XML node.
+name    : the name.
+ns      : the namespace href (may be None).
+Returns : the found node or None if an error occurs or node is not found.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getHex"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getHex</span>(<span class=sig-arg>c</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets the hex value of a character.
+c       : the character.
+Returns : the hex value of the c.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getNextElementNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getNextElementNode</span>(<span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Seraches for the next element node.
+cur     : the XML node.
+Returns : the next element node or None if it is not found.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getNodeNsHref"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getNodeNsHref</span>(<span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets node's namespace href.
+cur     : the node.
+Returns : node's namespace href.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="init"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">init</span>()</span>
+  </h3>
+<pre class="literalblock">
+Initializes XML Security Library. The depended libraries (LibXML and LibXSLT)
+must be initialized before.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isEmptyNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isEmptyNode</span>(<span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks whethere the node is empty (i.e. has only whitespaces children).
+node    : the node to check
+Returns : 1 if node is empty, 0 otherwise or a negative value if an error
+occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isEmptyString"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isEmptyString</span>(<span class=sig-arg>str</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks whethere the str is empty (i.e. has only whitespaces children).
+str     : the string to check
+Returns : 1 if str is empty, 0 otherwise or a negative value if an error
+occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isHex"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isHex</span>(<span class=sig-arg>c</span>)</span>
+  </h3>
+<pre class="literalblock">
+Returns 1 if a character is a hex digit or 0 otherwise.
+c       : the character.
+Returns : 1 if c is a hex digit or 0 otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyCopy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyCopy</span>(<span class=sig-arg>keyDst</span>,
+          <span class=sig-arg>keySrc</span>)</span>
+  </h3>
+<pre class="literalblock">
+Copies key data from keySrc to keyDst.
+keyDst  : the destination key.
+keySrc  : the source key.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataAesId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataAesId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The AES key data id.
+Returns : AES key data id or None if an error occurs (xmlsec-crypto library
+is not loaded or the AES key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataBinRead"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataBinRead</span>(<span class=sig-arg>id</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>buf</span>,
+          <span class=sig-arg>bufSize</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the key data of klass id from binary buffer buf to key.
+id         : the data klass.
+key        : the destination key.
+buf        : the input binary buffer.
+bufSize    : the input buffer size.
+keyInfoCtx : the &lt;dsig:KeyInfo/&gt; node processing context.
+Returns    : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataBinWrite"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataBinWrite</span>(<span class=sig-arg>id</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>buf</span>,
+          <span class=sig-arg>bufSize</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Writes the key data of klass id from the key to a binary buffer buf.
+id         : the data klass.
+key        : the source key.
+buf        : the output binary buffer.
+bufSize    : the output buffer size.
+keyInfoCtx : the &lt;dsig:KeyInfo/&gt; node processing context.
+Returns    : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataDesId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataDesId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The DES key data id.
+Returns : DES key data id or None if an error occurs (xmlsec-crypto library
+is not loaded or the DES key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataDsaId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataDsaId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The DSA key data id.
+Returns : DSA key data id or None if an error occurs (xmlsec-crypto library
+is not loaded or the DSA key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataEncryptedKeyId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataEncryptedKeyId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The &lt;enc:EncryptedKey/&gt; element key data id
+(http://www.w3.org/TR/xmlenc-core/sec-EncryptedKey)
+
+The EncryptedKey element is used to transport encryption keys from the
+originator to a known recipient(s). It may be used as a stand-alone XML
+document, be placed within an application document, or appear inside an
+EncryptedData element as a child of a ds:KeyInfo element. The key value
+is always encrypted to the recipient(s). When EncryptedKey is decrypted
+the resulting octets are made available to the EncryptionMethod algorithm
+without any additional processing.
+
+Returns : the &lt;enc:EncryptedKey/&gt; element processing key data id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataHmacId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataHmacId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC key data id.
+Returns : HMAC key data id or None if an error occurs (xmlsec-crypto
+library is not loaded or the HMAC key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataIdsGet"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataIdsGet</span>()</span>
+  </h3>
+<pre class="literalblock">
+Gets global registered key data klasses list.
+Returns : the list of all registered key data klasses.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataIdsInit"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataIdsInit</span>()</span>
+  </h3>
+<pre class="literalblock">
+Initializes the key data klasses. This function is called from the init
+function and the application should not call it directly.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataIdsRegister"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataIdsRegister</span>(<span class=sig-arg>id</span>)</span>
+  </h3>
+<pre class="literalblock">
+Registers id in the global list of key data klasses.
+id      : the key data klass.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataIdsRegisterDefault"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataIdsRegisterDefault</span>()</span>
+  </h3>
+<pre class="literalblock">
+Registers default (implemented by XML Security Library) key data klasses:
+&lt;dsig:KeyName/&gt; element processing klass, &lt;dsig:KeyValue/&gt; element
+processing klass, ...
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataIdsShutdown"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataIdsShutdown</span>()</span>
+  </h3>
+<pre class="literalblock">
+Shuts down the keys data klasses. This function is called from the shutdown
+function and the application should not call it directly.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataNameId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataNameId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The &lt;dsig:KeyName/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-KeyName)
+
+The KeyName element contains a string value (in which white space is
+significant) which may be used by the signer to communicate a key identifier
+to the recipient. Typically, KeyName contains an identifier related to the
+key pair used to sign the message, but it may contain other protocol-related
+information that indirectly identifies a key pair. (Common uses of KeyName
+include simple string names for keys, a key index, a distinguished name (DN),
+an email address, etc.)
+
+Returns : the &lt;dsig:KeyName/&gt; element processing key data id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataRawX509CertId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataRawX509CertId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The raw X509 cert key data id.
+Returns : raw x509 cert key data id or None if an error occurs
+(xmlsec-crypto library is not loaded or the raw X509 cert key data id is
+not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataRetrievalMethodId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataRetrievalMethodId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The &lt;dsig:RetrievalMethod/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-RetrievalMethod)
+
+A RetrievalMethod element within KeyInfo is used to convey a reference to
+KeyInfo information that is stored at another location. For example, several
+signatures in a document might use a key verified by an X.509v3 certificate
+chain appearing once in the document or remotely outside the document; each
+signature's KeyInfo can reference this chain using a single RetrievalMethod
+element instead of including the entire chain with a sequence of
+X509Certificate elements.
+
+RetrievalMethod uses the same syntax and dereferencing behavior as
+Reference's URI and The Reference Processing Model.
+
+Returns : the &lt;dsig:RetrievalMethod/&gt; element processing key data id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataRsaId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataRsaId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA key data id.
+Returns : RSA key data id or None if an error occurs (xmlsec-crypto library
+is not loaded or the RSA key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataValueId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataValueId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The &lt;dsig:KeyValue/&gt; element key data id
+(http://www.w3.org/TR/xmldsig-core/sec-KeyValue)
+
+The KeyValue element contains a single public key that may be useful in
+validating the signature.
+
+Returns : the &lt;dsig:KeyValue/&gt; element processing key data id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataX509Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataX509Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The X509 key data id.
+Returns : X509 key data id or None if an error occurs (xmlsec-crypto
+library is not loaded or the X509 key data id is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataXmlRead"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataXmlRead</span>(<span class=sig-arg>id</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>node</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the key data of klass id from XML node and adds them to key.
+id         : the data klass.
+key        : the destination key.
+node       : the XML node.
+keyInfoCtx : the &lt;dsig:KeyInfo/&gt; element processing context.
+Returns    : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyDataXmlWrite"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyDataXmlWrite</span>(<span class=sig-arg>id</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>node</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Writes the key data of klass id from key to an XML node.
+id         : the data klass.
+key        : the source key.
+node       : the XML node.
+keyInfoCtx : the &lt;dsig:KeyInfo/&gt; element processing context.
+Returns    : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyGenerate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyGenerate</span>(<span class=sig-arg>dataId</span>,
+          <span class=sig-arg>sizeBits</span>,
+          <span class=sig-arg>type</span>)</span>
+  </h3>
+<pre class="literalblock">
+Generates new key of requested klass dataId and type.
+dataId   : the requested key klass (rsa, dsa, aes, ...).
+sizeBits : the new key size (in bits!).
+type     : the new key type (session, permanent, ...).
+Returns  : the newly created key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyGenerateByName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyGenerateByName</span>(<span class=sig-arg>name</span>,
+          <span class=sig-arg>sizeBits</span>,
+          <span class=sig-arg>type</span>)</span>
+  </h3>
+<pre class="literalblock">
+Generates new key of requested klass and type.
+name     : the requested key klass name (rsa, dsa, aes, ...).
+sizeBits : the new key size (in bits!).
+type     : the new key type (session, permanent, ...).
+Returns  : the newly created key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyInfoCtxCopyUserPref"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyInfoCtxCopyUserPref</span>(<span class=sig-arg>dst</span>,
+          <span class=sig-arg>src</span>)</span>
+  </h3>
+<pre class="literalblock">
+Copies user preferences from src context to dst context.
+dst     : the destination context object.
+src     : the source context object.
+Returns : 0 on success and a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyInfoNodeRead"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyInfoNodeRead</span>(<span class=sig-arg>keyInfoNode</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Parses the &lt;dsig:KeyInfo/&gt; element keyInfoNode, extracts the key data and
+stores into key.
+keyInfoNode : the &lt;dsig:KeyInfo/&gt; node.
+key         : the result key object.
+keyInfoCtx  : the &lt;dsig:KeyInfo/&gt; element processing context.
+Returns     : 0 on success or -1 if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyInfoNodeWrite"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyInfoNodeWrite</span>(<span class=sig-arg>keyInfoNode</span>,
+          <span class=sig-arg>key</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Writes the key into the &lt;dsig:KeyInfo/&gt; element template keyInfoNode.
+keyInfoNode : the &lt;dsig:KeyInfo/&gt; node.
+key         : the result key object.
+keyInfoCtx  : the &lt;dsig:KeyInfo/&gt; element processing context.
+Returns     : 0 on success or -1 if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyPtrListId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyPtrListId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns the keys list klass.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyReadBinaryFile"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyReadBinaryFile</span>(<span class=sig-arg>dataId</span>,
+          <span class=sig-arg>filename</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the key value of klass dataId from a binary file filename.
+dataId   : the key value data klass.
+filename : the key binary filename.
+Returns  : newly created key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyReadBuffer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyReadBuffer</span>(<span class=sig-arg>dataId</span>,
+          <span class=sig-arg>buffer</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the key value of klass dataId from a buffer.
+dataId  : the key value data klass.
+buffer  : the buffer that contains the binary data.
+Returns : newly created key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyReadMemory"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyReadMemory</span>(<span class=sig-arg>dataId</span>,
+          <span class=sig-arg>data</span>,
+          <span class=sig-arg>dataSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the key value of klass dataId from a memory block data.
+dataId   : the key value data klass.
+data     : the memory containing the key
+dataSize : the size of the memory block
+Returns  : newly created key or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keyReqCopy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keyReqCopy</span>(<span class=sig-arg>dst</span>,
+          <span class=sig-arg>src</span>)</span>
+  </h3>
+<pre class="literalblock">
+Copies key requirements from src object to dst object.
+dst     : the destination object.
+src     : the source object.
+Returns : 0 on success and a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="keysMngrGetKey"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">keysMngrGetKey</span>(<span class=sig-arg>keyInfoNode</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the &lt;dsig:KeyInfo/&gt; node keyInfoNode and extracts the key.
+keyInfoNode : the &lt;dsig:KeyInfo/&gt; node.
+keyInfoCtx  : the &lt;dsig:KeyInfo/&gt; node processing context.
+Returns     : the key or None if the key is not found or an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodeGetName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodeGetName</span>(<span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets node's name.
+node    : the node.
+Returns : the node's name.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodeSetAdd"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodeSetAdd</span>(<span class=sig-arg>nset</span>,
+          <span class=sig-arg>newNSet</span>,
+          <span class=sig-arg>op</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds newNSet to the nset using operation op.
+nset    : the currrent nodes set (or None).
+newNSet : the new nodes set.
+op      : the operation type.
+Returns : the combined nodes set or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodeSetAddList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodeSetAddList</span>(<span class=sig-arg>nset</span>,
+          <span class=sig-arg>newNSet</span>,
+          <span class=sig-arg>op</span>)</span>
+  </h3>
+<pre class="literalblock">
+Adds newNSet to the nset as child using operation op.
+nset    : the currrent nodes set (or None).
+newNSet : the new nodes set.
+op      : the operation type.
+Returns : the combined nodes set or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodeSetGetChildren"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodeSetGetChildren</span>(<span class=sig-arg>doc</span>,
+          <span class=sig-arg>parent</span>,
+          <span class=sig-arg>withComments</span>,
+          <span class=sig-arg>invert</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creates a new nodes set that contains:
+- if withComments is not 0 and invert is 0: all nodes in the parent subtree;
+- if withComments is 0 and invert is 0: all nodes in the parent subtree
+except comment nodes;
+- if withComments is not 0 and invert not is 0: all nodes in the doc except
+nodes in the parent subtree;
+- if withComments is 0 and invert is 0: all nodes in the doc except nodes in
+the parent subtree and comment nodes.
+doc          : the XML document.
+parent       : the parent XML node or None if we want to include all document nodes.
+withComments : the flag include comments or not.
+invert       : the 'invert' flag.
+Returns      : the newly created NodeSet or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="parseFile"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">parseFile</span>(<span class=sig-arg>filename</span>)</span>
+  </h3>
+<pre class="literalblock">
+Loads XML Doc from file filename. We need a special version because of c14n
+issue. The code is copied from xmlSAXParseFileWithData() function.
+filename : the filename.
+Returns  : the loaded XML document or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="parseMemory"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">parseMemory</span>(<span class=sig-arg>buffer</span>,
+          <span class=sig-arg>size</span>,
+          <span class=sig-arg>recovery</span>)</span>
+  </h3>
+<pre class="literalblock">
+Loads XML Doc from memory. We need a special version because of c14n issue.
+The code is copied from xmlSAXParseMemory() function.
+buffer   : the input buffer.
+size     : the input buffer size.
+recovery : the flag.
+Returns  : the loaded XML document or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="parseMemoryExt"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">parseMemoryExt</span>(<span class=sig-arg>prefix</span>,
+          <span class=sig-arg>prefixSize</span>,
+          <span class=sig-arg>buffer</span>,
+          <span class=sig-arg>bufferSize</span>,
+          <span class=sig-arg>postfix</span>,
+          <span class=sig-arg>postfixSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Loads XML Doc from 3 chunks of memory: prefix, buffer and postfix.
+prefix      : the first part of the input.
+prefixSize  : the size of the first part of the input.
+buffer      : the second part of the input.
+bufferSize  : the size of the second part of the input.
+postfix     : the third part of the input.
+postfixSize : the size of the third part of the input.
+Returns     : the loaded XML document or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="ptrListCopy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">ptrListCopy</span>(<span class=sig-arg>dst</span>,
+          <span class=sig-arg>src</span>)</span>
+  </h3>
+<pre class="literalblock">
+Copies src list items to dst list using duplicateItem method of the list klass.
+If duplicateItem method is None then we jsut copy pointers to items.
+dst     : the destination list.
+src     : the source list.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="replaceContent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">replaceContent</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>newNode</span>)</span>
+  </h3>
+<pre class="literalblock">
+Swaps the content of node and newNode.
+node    : the current node.
+newNode : the new node.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="replaceNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">replaceNode</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>newNode</span>)</span>
+  </h3>
+<pre class="literalblock">
+Swaps the node and newNode in the XML tree.
+node    : the current node.
+newNode : the new node.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="replaceNodeBuffer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">replaceNodeBuffer</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>buffer</span>,
+          <span class=sig-arg>size</span>)</span>
+  </h3>
+<pre class="literalblock">
+Swaps the node and the parsed XML data from the buffer in the XML tree.
+node    : the current node.
+buffer  : the XML data.
+size    : the XML data size.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="shutdown"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">shutdown</span>()</span>
+  </h3>
+<pre class="literalblock">
+Clean ups the XML Security Library.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="simpleKeysStoreId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">simpleKeysStoreId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns a simple keys store klass id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformAes128CbcId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformAes128CbcId</span>()</span>
+  </h3>
+<pre class="literalblock">
+AES 128 CBC encryption transform id.
+Returns : AES 128 CBC encryption transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformAes192CbcId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformAes192CbcId</span>()</span>
+  </h3>
+<pre class="literalblock">
+AES 192 CBC encryption transform id.
+Returns : AES 192 CBC encryption transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformAes256CbcId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformAes256CbcId</span>()</span>
+  </h3>
+<pre class="literalblock">
+AES 256 CBC encryption transform id.
+Returns : AES 256 CBC encryption transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformBase64Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformBase64Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The Base64 transform id (http://www.w3.org/TR/xmldsig-core/sec-Base-64).
+The normative specification for base64 decoding transforms is RFC 2045
+(http://www.ietf.org/rfc/rfc2045.txt).
+Returns : base64 transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformDes3CbcId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformDes3CbcId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Triple DES CBC encryption transform id.
+Returns : Triple DES encryption transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformDsaSha1Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformDsaSha1Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The DSA-SHA1 signature transform id.
+Returns : DSA-SHA1 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformEnvelopedId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformEnvelopedId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The enveloped transform id
+(http://www.w3.org/TR/xmldsig-core/sec-EnvelopedSignature).
+Returns : enveloped transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformExclC14NId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformExclC14NId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Exclusive canoncicalization that ommits comments transform id
+(http://www.w3.org/TR/xml-exc-c14n/).
+Returns : exclusive c14n transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformExclC14NWithCommentsId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformExclC14NWithCommentsId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Exclusive canoncicalization that includes comments transform id
+(http://www.w3.org/TR/xml-exc-c14n/).
+Returns : exclusive c14n with comments transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacMd5Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacMd5Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-MD5 transform id.
+Returns : HMAC-MD5 transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacRipemd160Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacRipemd160Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-RIPEMD160 transform id.
+Returns : HMAC-RIPEMD160 transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacSha1Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacSha1Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-SHA1 transform id.
+Returns : HMAC-SHA1 transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacSha224Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacSha224Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-SHA224 transform id.
+Returns : HMAC-SHA224 transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacSha256Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacSha256Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-SHA256 transform id.
+Returns : HMAC-SHA256 transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacSha384Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacSha384Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-SHA384 transform id.
+Returns : HMAC-SHA384 transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformHmacSha512Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformHmacSha512Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The HMAC-SHA512 transform id.
+Returns : HMAC-SHA512 transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformInclC14NId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformInclC14NId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Inclusive (regular) canonicalization that omits comments transform id
+(http://www.w3.org/TR/xmldsig-core/sec-c14nAlg and
+http://www.w3.org/TR/2001/REC-xml-c14n-20010315).
+Returns : c14n transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformInclC14NWithCommentsId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformInclC14NWithCommentsId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Inclusive (regular) canonicalization that includes comments transform id
+(http://www.w3.org/TR/xmldsig-core/sec-c14nAlg and
+http://www.w3.org/TR/2001/REC-xml-c14n-20010315).
+Returns : c14n with comments transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformKWAes128Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformKWAes128Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The AES-128 kew wrapper transform id.
+Returns : AES-128 kew wrapper transform id is or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformKWAes192Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformKWAes192Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The AES-192 kew wrapper transform id.
+Returns : AES-192 kew wrapper transform id is or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformKWAes256Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformKWAes256Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The AES-256 kew wrapper transform id.
+Returns : AES-256 kew wrapper transform id is or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformKWDes3Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformKWDes3Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The Triple DES key wrapper transform id.
+Returns : Triple DES key wrapper transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformMd5Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformMd5Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The MD5 digest transform id.
+Returns : MD5 digest transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformMemBufGetBuffer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformMemBufGetBuffer</span>(<span class=sig-arg>transform</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets the memory buffer transform buffer.
+transform : the memory buffer transform.
+Returns   : the transform's buffer.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformMemBufId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformMemBufId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns the memory buffer transform id (used to store the data that go
+through it).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRemoveXmlTagsC14NId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRemoveXmlTagsC14NId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The 'remove xml tags' transform id (used before base64 transforms)
+(http://www.w3.org/TR/xmldsig-core/sec-Base-64).
+Returns : 'remove xml tags' transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRipemd160Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRipemd160Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+RIPEMD-160 digest transform id.
+Returns : RIPEMD-160 digest transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaMd5Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaMd5Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-MD5 signature transform id.
+Returns : RSA-MD5 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaOaepId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaOaepId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-OAEP key transport transform id.
+Returns : RSA-OAEP key transport transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaPkcs1Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaPkcs1Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-PKCS1 key transport transform id.
+Returns : RSA-PKCS1 key transport transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaRipemd160Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaRipemd160Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-RIPEMD160 signature transform id.
+Returns : RSA-RIPEMD160 signature transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaSha1Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaSha1Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-SHA1 signature transform id.
+Returns : RSA-SHA1 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaSha224Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaSha224Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-SHA224 signature transform id.
+Returns : RSA-SHA224 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaSha256Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaSha256Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-SHA256 signature transform id.
+Returns : RSA-SHA256 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaSha384Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaSha384Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-SHA384 signature transform id.
+Returns : RSA-SHA384 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformRsaSha512Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformRsaSha512Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The RSA-SHA512 signature transform id.
+Returns : RSA-SHA512 signature transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformSha1Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformSha1Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+SHA-1 digest transform id.
+Returns : SHA-1 digest transform id or None if an error occurs (the
+xmlsec-crypto library is not loaded or this transform is not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformSha224Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformSha224Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The SHA224 digest transform id.
+Returns : SHA224 digest transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformSha256Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformSha256Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The SHA256 digest transform id.
+Returns : SHA256 digest transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformSha384Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformSha384Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The SHA384 digest transform id.
+Returns : SHA384 digest transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformSha512Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformSha512Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The SHA512 digest transform id.
+Returns : SHA512 digest transform id or None if an error occurs
+(the xmlsec-crypto library is not loaded or this transform is not
+implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformUriTypeCheck"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformUriTypeCheck</span>(<span class=sig-arg>type</span>,
+          <span class=sig-arg>uri</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks if uri matches expected type type.
+type    : the expected URI type.
+uri     : the uri for checking.
+Returns : 1 if uri matches type, 0 if not or a negative value if an error
+occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformVisa3DHackId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformVisa3DHackId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Selects node subtree by given node id string. The only reason why we need
+this is Visa3D protocol. It doesn't follow XML/XPointer/XMLDSig specs and
+allows something like '12345' in the URI attribute. Since we couldn't
+evaluate such expressions thru XPath/XPointer engine, we need to have this
+hack here.
+Returns : Visa3DHack transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformXmlParserId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformXmlParserId</span>()</span>
+  </h3>
+<pre class="literalblock">
+Returns the XML parser transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformXPath2Id"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformXPath2Id</span>()</span>
+  </h3>
+<pre class="literalblock">
+The XPath2 transform id (http://www.w3.org/TR/xmldsig-filter2/).
+Returns : XPath2 transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformXPathId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformXPathId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The XPath transform evaluates given XPath expression and intersects the
+result with the previous nodes set.
+(http://www.w3.org/TR/xmldsig-core/sec-XPath).
+Returns : XPath transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformXPointerId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformXPointerId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The XPointer transform id
+(http://www.ietf.org/internet-drafts/draft-eastlake-xmldsig-uri-02.txt).
+Returns : XPointer transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="transformXsltId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">transformXsltId</span>()</span>
+  </h3>
+<pre class="literalblock">
+XSLT transform id (http://www.w3.org/TR/xmldsig-core/sec-XSLT).
+Returns : XSLT transform id.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="x509DataGetNodeContent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">x509DataGetNodeContent</span>(<span class=sig-arg>node</span>,
+          <span class=sig-arg>deleteChildren</span>,
+          <span class=sig-arg>keyInfoCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads the contents of &lt;dsig:X509Data/&gt; node and returns it as a bits mask.
+node           : the &lt;dsig:X509Data/&gt; node.
+deleteChildren : the flag that indicates whether to remove node children
+after reading.
+keyInfoCtx     : the &lt;dsig:KeyInfo/&gt; node processing context.
+Returns        : the bit mask representing the &lt;dsig:X509Data/&gt; node content
+or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="x509StoreId"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">x509StoreId</span>()</span>
+  </h3>
+<pre class="literalblock">
+The X509 certificates key data store id.
+Returns : X509 certificates key data store id or None if an error occurs
+(xmlsec-crypto library is not loaded or the raw X509 cert key data id is
+not implemented).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

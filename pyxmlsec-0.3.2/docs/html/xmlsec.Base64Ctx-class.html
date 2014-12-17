@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec.Base64Ctx</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="xmlsec-module.html">Module&nbsp;xmlsec</a> ::
+        Class&nbsp;Base64Ctx
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec.Base64Ctx-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Base64Ctx</h2>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>encode</span>,
+          <span class=summary-sig-arg>columns</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+<br />
+Allocates and initializes new base64 context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#destroy" class="summary-sig-name"><code>destroy</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Destroys base64 context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#final" class="summary-sig-name"><code>final</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>out</span>,
+          <span class=summary-sig-arg>outSize</span>)</span></code>
+<br />
+Encodes or decodes the last piece of data stored in the context and
+finalizes the result.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#finalize" class="summary-sig-name"><code>finalize</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Frees all the resources allocated by Base64 context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#initialize" class="summary-sig-name"><code>initialize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>encode</span>,
+          <span class=summary-sig-arg>columns</span>)</span></code>
+<br />
+Initializes new base64 context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Base64Ctx-class.html#update" class="summary-sig-name"><code>update</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>inBuf</span>,
+          <span class=summary-sig-arg>inBufSize</span>,
+          <span class=summary-sig-arg>outBuf</span>,
+          <span class=summary-sig-arg>outBufSize</span>)</span></code>
+<br />
+Encodes or decodes the next piece of data from input buffer.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>encode</span>,
+          <span class=sig-arg>columns</span>,
+          <span class=sig-arg>_obj</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+<pre class="literalblock">
+Allocates and initializes new base64 context.
+encode  : the encode/decode flag (1 - encode, 0 - decode)
+columns : the max line length.
+Returns : the newly created Base64 context object or None if an
+error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="destroy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">destroy</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Destroys base64 context.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="final"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">final</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>out</span>,
+          <span class=sig-arg>outSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encodes or decodes the last piece of data stored in the context and
+finalizes the result.
+out     : the output buffer
+outSize : the output buffer size
+Returns : the number of bytes written to output buffer or -1 if an
+error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="finalize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">finalize</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Frees all the resources allocated by Base64 context.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="initialize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">initialize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>encode</span>,
+          <span class=sig-arg>columns</span>)</span>
+  </h3>
+<pre class="literalblock">
+Initializes new base64 context.
+encode  : the encode/decode flag (1 - encode, 0 - decode)
+columns : the max line length.
+Returns : 0 on success and a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="update"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">update</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>inBuf</span>,
+          <span class=sig-arg>inBufSize</span>,
+          <span class=sig-arg>outBuf</span>,
+          <span class=sig-arg>outBufSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Encodes or decodes the next piece of data from input buffer.
+inBuf      : the input buffer
+inBufSize  : the input buffer size
+outBuf     : the output buffer
+outBufSize : the output buffer size
+Returns : the number of bytes written to output buffer
+or -1 if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

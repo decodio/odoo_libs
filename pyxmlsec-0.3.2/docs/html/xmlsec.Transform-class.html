@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec.Transform</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="xmlsec-module.html">Module&nbsp;xmlsec</a> ::
+        Class&nbsp;Transform
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec.Transform-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class Transform</h2>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+<br />
+Creates new transform of the id klass.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__getattr__"></a><span class="summary-sig"><span class="summary-sig-name">__getattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__setattr__"></a><span class="summary-sig"><span class="summary-sig-name">__setattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#base64SetLineSize" class="summary-sig-name"><code>base64SetLineSize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lineSize</span>)</span></code>
+<br />
+Sets the max line size to lineSize for an BASE64 encode transform.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#destroy" class="summary-sig-name"><code>destroy</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Destroys transform.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#nodeRead" class="summary-sig-name"><code>nodeRead</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>usage</span>,
+          <span class=summary-sig-arg>transformCtx</span>)</span></code>
+<br />
+Reads transform from the node as follows:
+1) reads 'Algorithm' attribute;
+2) checks the lists of known and allowed transforms;
+3) calls transform's create method;
+4) calls transform's read transform node method.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#setKey" class="summary-sig-name"><code>setKey</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>key</span>)</span></code>
+<br />
+Sets the transform's key.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#setKeyReq" class="summary-sig-name"><code>setKeyReq</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>keyReq</span>)</span></code>
+<br />
+Sets the key requirements for transform in the keyReq.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#visa3DHackSetID" class="summary-sig-name"><code>visa3DHackSetID</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>id</span>)</span></code>
+<br />
+Sets the ID value for an Visa3DHack transform.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.Transform-class.html#xpointerSetExpr" class="summary-sig-name"><code>xpointerSetExpr</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>expr</span>,
+          <span class=summary-sig-arg>nodeSetType</span>,
+          <span class=summary-sig-arg>hereNode</span>)</span></code>
+<br />
+Sets the XPointer expression for an XPointer transform.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>_obj</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+<pre class="literalblock">
+Creates new transform of the id klass. The caller is responsible for
+destroying returned tansform using destroy method.
+id      : the transform id to create.
+Returns : newly created transform or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="base64SetLineSize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">base64SetLineSize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>lineSize</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the max line size to lineSize for an BASE64 encode transform.
+lineSize : the new max line size.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="destroy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">destroy</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Destroys transform.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodeRead"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodeRead</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>usage</span>,
+          <span class=sig-arg>transformCtx</span>)</span>
+  </h3>
+<pre class="literalblock">
+Reads transform from the node as follows:
+1) reads 'Algorithm' attribute;
+2) checks the lists of known and allowed transforms;
+3) calls transform's create method;
+4) calls transform's read transform node method.
+usage        : the transform usage (signature, encryption, ...).
+transformCtx : the transform's chaing processing context.
+Returns      : newly created transform or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setKey"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setKey</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>key</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the transform's key.
+key     : the key.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setKeyReq"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setKeyReq</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>keyReq</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the key requirements for transform in the keyReq.
+keyReq  : the keys requirements object.
+Returns : 0 on success or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="visa3DHackSetID"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">visa3DHackSetID</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>id</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the ID value for an Visa3DHack transform.
+id      : the ID value.
+Returns : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerSetExpr"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerSetExpr</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>expr</span>,
+          <span class=sig-arg>nodeSetType</span>,
+          <span class=sig-arg>hereNode</span>)</span>
+  </h3>
+<pre class="literalblock">
+Sets the XPointer expression for an XPointer transform.
+expr        : the XPointer expression.
+nodeSetType : the type of evaluated XPointer expression.
+hereNode    : the pointer to 'here' node.
+Returns     : 0 on success or a negative value if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>xmlsec.DSigReferenceCtx</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        <a href="xmlsec-module.html">Module&nbsp;xmlsec</a> ::
+        Class&nbsp;DSigReferenceCtx
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="xmlsec.DSigReferenceCtx-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class DSigReferenceCtx</h2>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dsigCtx</span>,
+          <span class=summary-sig-arg>origin</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+<br />
+Creates new &lt;dsig:Reference/&gt; element processing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__getattr__"></a><span class="summary-sig"><span class="summary-sig-name">__getattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__setattr__"></a><span class="summary-sig"><span class="summary-sig-name">__setattr__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#debugDump" class="summary-sig-name"><code>debugDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints the debug information about dsigCtx to output.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#debugXmlDump" class="summary-sig-name"><code>debugXmlDump</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Prints the debug information about dsigCtx to output file in XML format.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#destroy" class="summary-sig-name"><code>destroy</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Destroys &lt;dsig:Reference/&gt; element processing context object...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#finalize" class="summary-sig-name"><code>finalize</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Cleans up &lt;dsig:Reference/&gt; element processing object.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#getPreDigestBuffer" class="summary-sig-name"><code>getPreDigestBuffer</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Gets the results of &lt;dsig:Reference/&gt; node processing just before
+digesting (valid only if DSIG_FLAGS_STORE_SIGNEDINFO_REFERENCES or
+DSIG_FLAGS_STORE_MANIFEST_REFERENCES flags of signature context is set).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#initialize" class="summary-sig-name"><code>initialize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>dsigCtx</span>,
+          <span class=summary-sig-arg>origin</span>)</span></code>
+<br />
+Initializes new &lt;dsig:Reference/&gt; element processing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="xmlsec.DSigReferenceCtx-class.html#processNode" class="summary-sig-name"><code>processNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>node</span>)</span></code>
+<br />
+The Reference Element (http://www.w3.org/TR/xmldsig-core/sec-Reference)
+
+Reference is an element that may occur one or more times.</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">__init__</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dsigCtx</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>origin</span>=<span class=sig-default>None</span>,
+          <span class=sig-arg>_obj</span>=<span class=sig-default>None</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+<pre class="literalblock">
+Creates new &lt;dsig:Reference/&gt; element processing context. Caller is
+responsible for destroying the returned context by calling destroy
+method.
+dsigCtx : the parent &lt;dsig:Signature/&gt; node processing context.
+origin  : the reference origin (&lt;dsig:SignedInfo/&gt; or &lt;dsig:Manifest/&gt; node).
+Returns : newly created context or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints the debug information about dsigCtx to output.
+output : the output file.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugXmlDump"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugXmlDump</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Prints the debug information about dsigCtx to output file in XML format.
+output : the output file.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="destroy"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">destroy</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Destroys &lt;dsig:Reference/&gt; element processing context object
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="finalize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">finalize</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Cleans up &lt;dsig:Reference/&gt; element processing object.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getPreDigestBuffer"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getPreDigestBuffer</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Gets the results of &lt;dsig:Reference/&gt; node processing just before
+digesting (valid only if DSIG_FLAGS_STORE_SIGNEDINFO_REFERENCES or
+DSIG_FLAGS_STORE_MANIFEST_REFERENCES flags of signature context is set).
+Returns : the buffer or None if an error occurs.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="initialize"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">initialize</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>dsigCtx</span>,
+          <span class=sig-arg>origin</span>)</span>
+  </h3>
+<pre class="literalblock">
+Initializes new &lt;dsig:Reference/&gt; element processing context. Caller is
+responsible for cleaning up the returned context by calling finalize
+method.
+dsigCtx : the parent &lt;dsig:Signature/&gt; node processing context.
+origin  : the reference origin (&lt;dsig:SignedInfo/&gt; or &lt;dsig:Manifest/&gt; node).
+Returns : 0 on succes or a negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="processNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">processNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>node</span>)</span>
+  </h3>
+<pre class="literalblock">
+The Reference Element (http://www.w3.org/TR/xmldsig-core/sec-Reference)
+
+Reference is an element that may occur one or more times. It specifies a
+digest algorithm and digest value, and optionally an identifier of the
+object being signed, the type of the object, and/or a list of transforms
+to be applied prior to digesting. The identification (URI) and transforms
+describe how the digested content (i.e., the input to the digest method)
+was created. The Type attribute facilitates the processing of referenced
+data. For example, while this specification makes no requirements over
+external data, an application may wish to signal that the referent is a
+Manifest. An optional ID attribute permits a Reference to be referenced
+from elsewhere.
+node    : the &lt;dsig:Reference/&gt; node.
+Returns : 0 on succes or aa negative value otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

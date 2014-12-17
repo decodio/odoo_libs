@@ -1,0 +1,2059 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>libxml2.xmlNode</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <font size="-1"><b class="breadcrumbs">
+        Module&nbsp;libxml2 ::
+        Class&nbsp;xmlNode
+      </b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="libxml2.xmlNode-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td>
+</tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class xmlNode</h2>
+
+<pre class="base-tree">
+<a href="libxml2.xmlCore-class.html"><code>xmlCore</code></a> --+
+          |
+         <b>xmlNode</b>
+</pre><br />
+
+<dl><dt><b>Known Subclasses:</b></dt>
+<dd>
+    <a href="xmlsec.TmplCipherReference-class.html"><code>TmplCipherReference</code></a>,
+    <a href="xmlsec.TmplEncData-class.html"><code>TmplEncData</code></a>,
+    <a href="xmlsec.TmplKeyInfo-class.html"><code>TmplKeyInfo</code></a>,
+    <a href="xmlsec.TmplManifest-class.html"><code>TmplManifest</code></a>,
+    <a href="xmlsec.TmplObject-class.html"><code>TmplObject</code></a>,
+    <a href="xmlsec.TmplReference-class.html"><code>TmplReference</code></a>,
+    <a href="xmlsec.TmplRetrievalMethod-class.html"><code>TmplRetrievalMethod</code></a>,
+    <a href="xmlsec.TmplSignature-class.html"><code>TmplSignature</code></a>,
+    <a href="xmlsec.TmplTransform-class.html"><code>TmplTransform</code></a></dd></dl>
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__init__"></a><span class="summary-sig"><span class="summary-sig-name">__init__</span>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>_obj</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__repr__"></a><span class="summary-sig"><span class="summary-sig-name">__repr__</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addChild" class="summary-sig-name"><code>addChild</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Add a new node to &#64;parent, at the end of the child (or
+property) list merging adjacent TEXT nodes (in which case
+&#64;cur is freed) If the new node is ATTRIBUTE, it is added
+into properties instead of children.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addChildList" class="summary-sig-name"><code>addChildList</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Add a list of node at the end of the child list of the...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addContent" class="summary-sig-name"><code>addContent</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>content</span>)</span></code>
+<br />
+Append the extra substring to the node content.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addContentLen" class="summary-sig-name"><code>addContentLen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>content</span>,
+          <span class=summary-sig-arg>len</span>)</span></code>
+<br />
+Append the extra substring to the node content.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addNextSibling" class="summary-sig-name"><code>addNextSibling</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>elem</span>)</span></code>
+<br />
+Add a new node &#64;elem as the next sibling of &#64;cur If the new
+node was already inserted in a document it is first
+unlinked from its existing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addPrevSibling" class="summary-sig-name"><code>addPrevSibling</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>elem</span>)</span></code>
+<br />
+Add a new node &#64;elem as the previous sibling of &#64;cur
+merging adjacent TEXT nodes (&#64;elem may be freed) If the
+new node was already inserted in a document it is first
+unlinked from its existing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#addSibling" class="summary-sig-name"><code>addSibling</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>elem</span>)</span></code>
+<br />
+Add a new element &#64;elem to the list of siblings of &#64;cur
+merging adjacent TEXT nodes (&#64;elem may be freed) If the
+new element was already inserted in a document it is first
+unlinked from its existing context.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#copyNode" class="summary-sig-name"><code>copyNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>extended</span>)</span></code>
+<br />
+Do a copy of the node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#copyNodeList" class="summary-sig-name"><code>copyNodeList</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Do a recursive copy of the node list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#copyProp" class="summary-sig-name"><code>copyProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Do a copy of the attribute.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#copyPropList" class="summary-sig-name"><code>copyPropList</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Do a copy of an attribute list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#debugDumpNode" class="summary-sig-name"><code>debugDumpNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>,
+          <span class=summary-sig-arg>depth</span>)</span></code>
+<br />
+Dumps debug information for the element node, it is...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#debugDumpNodeList" class="summary-sig-name"><code>debugDumpNodeList</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>,
+          <span class=summary-sig-arg>depth</span>)</span></code>
+<br />
+Dumps debug information for the list of element node, it is...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#debugDumpOneNode" class="summary-sig-name"><code>debugDumpOneNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>,
+          <span class=summary-sig-arg>depth</span>)</span></code>
+<br />
+Dumps debug information for the element node, it is not...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#docCopyNode" class="summary-sig-name"><code>docCopyNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>extended</span>)</span></code>
+<br />
+Do a copy of the node to a given document.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#docSetRootElement" class="summary-sig-name"><code>docSetRootElement</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>)</span></code>
+<br />
+Set the root element of the document (doc-&gt;children is a
+list containing possibly comments, PIs, etc ...).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#freeNode" class="summary-sig-name"><code>freeNode</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Free a node, this is a recursive behaviour, all the
+children are freed too.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#freeNodeList" class="summary-sig-name"><code>freeNodeList</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Free a node and all its siblings, this is a recursive
+behaviour, all the children are freed too.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#getBase" class="summary-sig-name"><code>getBase</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>)</span></code>
+<br />
+Searches for the BASE URL.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#getContent" class="summary-sig-name"><code>getContent</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Read the value of a node, this can be either the text
+carried directly by this node if it's a TEXT node or the
+aggregate string of the values carried by this node
+child's (TEXT and ENTITY_REF).</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#getLang" class="summary-sig-name"><code>getLang</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Searches the language of a node, i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#getSpacePreserve" class="summary-sig-name"><code>getSpacePreserve</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Searches the space preserving behaviour of a node, i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#hasNsProp" class="summary-sig-name"><code>hasNsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>nameSpace</span>)</span></code>
+<br />
+Search for an attribute associated to a node This attribute
+has to be anchored in the namespace specified.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#hasProp" class="summary-sig-name"><code>hasProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Search an attribute associated to a node This function also
+looks in DTD attribute declaration for #FIXED or default
+declaration values unless DTD use has been turned off.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#isBlankNode" class="summary-sig-name"><code>isBlankNode</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Checks whether this node is an empty or whitespace only
+(and possibly ignorable) text-node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#isID" class="summary-sig-name"><code>isID</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>attr</span>)</span></code>
+<br />
+Determine whether an attribute is of type ID.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#isRef" class="summary-sig-name"><code>isRef</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>attr</span>)</span></code>
+<br />
+Determine whether an attribute is of type Ref.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#isText" class="summary-sig-name"><code>isText</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Is this node a Text node ?...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#lastChild" class="summary-sig-name"><code>lastChild</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Search the last child of a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#lineNo" class="summary-sig-name"><code>lineNo</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Get line number of &#64;node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#listGetRawString" class="summary-sig-name"><code>listGetRawString</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>inLine</span>)</span></code>
+<br />
+Builds the string equivalent to the text contained in the
+Node list made of TEXTs and ENTITY_REFs, contrary to
+xmlNodeListGetString() this function doesn't do any
+character encoding handling.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#listGetString" class="summary-sig-name"><code>listGetString</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>inLine</span>)</span></code>
+<br />
+Build the string equivalent to the text contained in the...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#lsCountNode" class="summary-sig-name"><code>lsCountNode</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Count the children of &#64;node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#lsOneNode" class="summary-sig-name"><code>lsOneNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>output</span>)</span></code>
+<br />
+Dump to &#64;output the type and name of &#64;node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newChild" class="summary-sig-name"><code>newChild</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>content</span>)</span></code>
+<br />
+Creation of a new child element, added at the end of
+&#64;parent children list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newNs" class="summary-sig-name"><code>newNs</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>href</span>,
+          <span class=summary-sig-arg>prefix</span>)</span></code>
+<br />
+Creation of a new Namespace.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newNsProp" class="summary-sig-name"><code>newNsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Create a new property tagged with a namespace and carried
+by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newNsPropEatName" class="summary-sig-name"><code>newNsPropEatName</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Create a new property tagged with a namespace and carried
+by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newProp" class="summary-sig-name"><code>newProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Create a new property carried by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#newTextChild" class="summary-sig-name"><code>newTextChild</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>content</span>)</span></code>
+<br />
+Creation of a new child element, added at the end of
+&#64;parent children list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#nodePath" class="summary-sig-name"><code>nodePath</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Build a structure based Path for the given node...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#noNsProp" class="summary-sig-name"><code>noNsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Search and get the value of an attribute associated to a
+node This does the entity substitution.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#ns" class="summary-sig-name"><code>ns</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Get the namespace of a node...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#nsDefs" class="summary-sig-name"><code>nsDefs</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Get the namespace of a node...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#nsProp" class="summary-sig-name"><code>nsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>nameSpace</span>)</span></code>
+<br />
+Search and get the value of an attribute associated to a
+node This attribute has to be anchored in the namespace
+specified.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#prop" class="summary-sig-name"><code>prop</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Search and get the value of an attribute associated to a
+node This does the entity substitution.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#reconciliateNs" class="summary-sig-name"><code>reconciliateNs</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>)</span></code>
+<br />
+This function checks that all the namespaces declared
+within the given tree are properly declared.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#replaceNode" class="summary-sig-name"><code>replaceNode</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>cur</span>)</span></code>
+<br />
+Unlink the old node from its current context, prune the new
+one at the same place.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#searchNs" class="summary-sig-name"><code>searchNs</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>nameSpace</span>)</span></code>
+<br />
+Search a Ns registered under a given name space for a
+document.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#searchNsByHref" class="summary-sig-name"><code>searchNsByHref</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>href</span>)</span></code>
+<br />
+Search a Ns aliasing a given URI.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setBase" class="summary-sig-name"><code>setBase</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>uri</span>)</span></code>
+<br />
+Set (or reset) the base URI of a node, i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setContent" class="summary-sig-name"><code>setContent</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>content</span>)</span></code>
+<br />
+Replace the content of a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setContentLen" class="summary-sig-name"><code>setContentLen</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>content</span>,
+          <span class=summary-sig-arg>len</span>)</span></code>
+<br />
+Replace the content of a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setLang" class="summary-sig-name"><code>setLang</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>lang</span>)</span></code>
+<br />
+Set the language of a node, i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setListDoc" class="summary-sig-name"><code>setListDoc</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>)</span></code>
+<br />
+update all nodes in the list to point to the right document...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setName" class="summary-sig-name"><code>setName</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Set (or reset) the name of a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setNs" class="summary-sig-name"><code>setNs</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>)</span></code>
+<br />
+Associate a namespace to a node, a posteriori.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setNsProp" class="summary-sig-name"><code>setNsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Set (or reset) an attribute carried by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setProp" class="summary-sig-name"><code>setProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Set (or reset) an attribute carried by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setSpacePreserve" class="summary-sig-name"><code>setSpacePreserve</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>val</span>)</span></code>
+<br />
+Set (or reset) the space preserving behaviour of a node,
+i.e.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#setTreeDoc" class="summary-sig-name"><code>setTreeDoc</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>)</span></code>
+<br />
+update all nodes under the tree to point to the right...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#shellPrintNode" class="summary-sig-name"><code>shellPrintNode</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Print node to the output FILE...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#textConcat" class="summary-sig-name"><code>textConcat</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>content</span>,
+          <span class=summary-sig-arg>len</span>)</span></code>
+<br />
+Concat the given string at the end of the existing node...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#textMerge" class="summary-sig-name"><code>textMerge</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>second</span>)</span></code>
+<br />
+Merge two text nodes into one...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#unlinkNode" class="summary-sig-name"><code>unlinkNode</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Unlink a node from it's current context, the node is not...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#unsetNsProp" class="summary-sig-name"><code>unsetNsProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ns</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Remove an attribute carried by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#unsetProp" class="summary-sig-name"><code>unsetProp</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>name</span>)</span></code>
+<br />
+Remove an attribute carried by a node.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#validNormalizeAttributeValue" class="summary-sig-name"><code>validNormalizeAttributeValue</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>name</span>,
+          <span class=summary-sig-arg>value</span>)</span></code>
+<br />
+Does the validation related extra step of the normalization
+of attribute values:  If the declared value is not CDATA,
+then the XML processor must further process the normalized
+attribute value by discarding any leading and trailing
+space (#x20) characters, and by replacing sequences of
+space (#x20) characters by single space (#x20) character.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xincludeProcessTree" class="summary-sig-name"><code>xincludeProcessTree</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Implement the XInclude substitution for the given subtree...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xincludeProcessTreeFlags" class="summary-sig-name"><code>xincludeProcessTreeFlags</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>flags</span>)</span></code>
+<br />
+Implement the XInclude substitution for the given subtree...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathCastNodeToNumber" class="summary-sig-name"><code>xpathCastNodeToNumber</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Converts a node to its number value...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathCastNodeToString" class="summary-sig-name"><code>xpathCastNodeToString</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Converts a node to its string value.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathCmpNodes" class="summary-sig-name"><code>xpathCmpNodes</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>node2</span>)</span></code>
+<br />
+Compare two nodes w.r.t document order...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNewNodeSet" class="summary-sig-name"><code>xpathNewNodeSet</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type NodeSet and...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNewValueTree" class="summary-sig-name"><code>xpathNewValueTree</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type Value Tree (XSLT)...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextAncestor" class="summary-sig-name"><code>xpathNextAncestor</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;ancestor&quot; direction the...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextAncestorOrSelf" class="summary-sig-name"><code>xpathNextAncestorOrSelf</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;ancestor-or-self&quot; direction he
+ancestor-or-self axis contains the context node and
+ancestors of the context node in reverse document order;
+thus the context node is the first node on the axis, and
+the context node's parent the second; parent here is
+defined the same as with the parent axis.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextAttribute" class="summary-sig-name"><code>xpathNextAttribute</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;attribute&quot; direction TODO:...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextChild" class="summary-sig-name"><code>xpathNextChild</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;child&quot; direction The child axis
+contains the children of the context node in document
+order.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextDescendant" class="summary-sig-name"><code>xpathNextDescendant</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;descendant&quot; direction the
+descendant axis contains the descendants of the context
+node in document order; a descendant is a child or a child
+of a child and so on.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextDescendantOrSelf" class="summary-sig-name"><code>xpathNextDescendantOrSelf</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;descendant-or-self&quot; direction...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextFollowing" class="summary-sig-name"><code>xpathNextFollowing</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;following&quot; direction The...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextFollowingSibling" class="summary-sig-name"><code>xpathNextFollowingSibling</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;following-sibling&quot; direction
+The following-sibling axis contains the following siblings
+of the context node in document order.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextNamespace" class="summary-sig-name"><code>xpathNextNamespace</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;namespace&quot; direction the
+namespace axis contains the namespace nodes of the context
+node; the order of nodes on this axis is
+implementation-defined; the axis will be empty unless the
+context node is an element  We keep the XML namespace node
+at the end of the list.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextParent" class="summary-sig-name"><code>xpathNextParent</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;parent&quot; direction The parent
+axis contains the parent of the context node, if there is
+one.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextPreceding" class="summary-sig-name"><code>xpathNextPreceding</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;preceding&quot; direction the...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextPrecedingSibling" class="summary-sig-name"><code>xpathNextPrecedingSibling</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;preceding-sibling&quot; direction
+The preceding-sibling axis contains the preceding siblings
+of the context node in reverse document order; the first
+preceding sibling is first on the axis; the sibling
+preceding that node is the second on the axis and so on.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpathNextSelf" class="summary-sig-name"><code>xpathNextSelf</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>ctxt</span>)</span></code>
+<br />
+Traversal function for the &quot;self&quot; direction The self axis...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpointerNewCollapsedRange" class="summary-sig-name"><code>xpointerNewCollapsedRange</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type range using a single...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpointerNewContext" class="summary-sig-name"><code>xpointerNewContext</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>doc</span>,
+          <span class=summary-sig-arg>origin</span>)</span></code>
+<br />
+Create a new XPointer context...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpointerNewLocationSetNodes" class="summary-sig-name"><code>xpointerNewLocationSetNodes</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>end</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type LocationSet and...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpointerNewRange" class="summary-sig-name"><code>xpointerNewRange</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>startindex</span>,
+          <span class=summary-sig-arg>end</span>,
+          <span class=summary-sig-arg>endindex</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type range...</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlNode-class.html#xpointerNewRangeNodes" class="summary-sig-name"><code>xpointerNewRangeNodes</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>end</span>)</span></code>
+<br />
+Create a new xmlXPathObjectPtr of type range using 2 nodes...</td></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from xmlCore</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#walk_depth_first" class="summary-sig-name"><code>__iter__</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#c14nMemory" class="summary-sig-name"><code>c14nMemory</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>nodes</span>,
+          <span class=summary-sig-arg>exclusive</span>,
+          <span class=summary-sig-arg>prefixes</span>,
+          <span class=summary-sig-arg>with_comments</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#c14nSaveTo" class="summary-sig-name"><code>c14nSaveTo</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>file</span>,
+          <span class=summary-sig-arg>nodes</span>,
+          <span class=summary-sig-arg>exclusive</span>,
+          <span class=summary-sig-arg>prefixes</span>,
+          <span class=summary-sig-arg>with_comments</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#free" class="summary-sig-name"><code>free</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_children" class="summary-sig-name"><code>get_children</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_content" class="summary-sig-name"><code>get_content</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_doc" class="summary-sig-name"><code>get_doc</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_last" class="summary-sig-name"><code>get_last</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_name" class="summary-sig-name"><code>get_name</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_next" class="summary-sig-name"><code>get_next</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_parent" class="summary-sig-name"><code>get_parent</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_prev" class="summary-sig-name"><code>get_prev</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_properties" class="summary-sig-name"><code>get_properties</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#get_type" class="summary-sig-name"><code>get_type</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#saveTo" class="summary-sig-name"><code>saveTo</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>file</span>,
+          <span class=summary-sig-arg>encoding</span>,
+          <span class=summary-sig-arg>format</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#serialize" class="summary-sig-name"><code>serialize</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>encoding</span>,
+          <span class=summary-sig-arg>format</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#walk_breadth_first" class="summary-sig-name"><code>walk_breadth_first</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#walk_depth_first" class="summary-sig-name"><code>walk_depth_first</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#xpathEval" class="summary-sig-name"><code>xpathEval</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>expr</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class="summary-sig"><a href="libxml2.xmlCore-class.html#xpathEval2" class="summary-sig-name"><code>xpathEval2</code></a>(<span class=summary-sig-arg>self</span>,
+          <span class=summary-sig-arg>expr</span>)</span></code>
+</td></tr>
+</table><br />
+
+
+<!-- =========== START OF PROPERTY SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Property Summary</th></tr>
+<tr bgcolor="#e8f0f8" class="group">
+  <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;Inherited from xmlCore</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#children"><code>children</code></a></b>: First child node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#content"><code>content</code></a></b>: Content of this node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#doc"><code>doc</code></a></b>: The document this node belongs to...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#last"><code>last</code></a></b>: Last sibling node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#name"><code>name</code></a></b>: Node name...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#next"><code>next</code></a></b>: Next sibling node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#parent"><code>parent</code></a></b>: Parent node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#prev"><code>prev</code></a></b>: Previous sibling node...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#properties"><code>properties</code></a></b>: List of properies...</td></tr><tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><b><a href="libxml2.xmlCore-class.html#type"><code>type</code></a></b>: Node type...</td></tr></table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="addChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addChild</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Add a new node to &#64;parent, at the end of the child (or
+property) list merging adjacent TEXT nodes (in which case
+&#64;cur is freed) If the new node is ATTRIBUTE, it is added
+into properties instead of children. If there is an
+attribute with equal name, it is first destroyed.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addChildList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addChildList</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Add a list of node at the end of the child list of the
+parent merging adjacent TEXT nodes (&#64;cur may be freed)
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addContent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addContent</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>content</span>)</span>
+  </h3>
+<pre class="literalblock">
+Append the extra substring to the node content.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addContentLen"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addContentLen</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>content</span>,
+          <span class=sig-arg>len</span>)</span>
+  </h3>
+<pre class="literalblock">
+Append the extra substring to the node content.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addNextSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addNextSibling</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>elem</span>)</span>
+  </h3>
+<pre class="literalblock">
+Add a new node &#64;elem as the next sibling of &#64;cur If the new
+node was already inserted in a document it is first
+unlinked from its existing context. As a result of text
+merging &#64;elem may be freed. If the new node is ATTRIBUTE,
+it is added into properties instead of children. If there
+is an attribute with equal name, it is first destroyed.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addPrevSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addPrevSibling</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>elem</span>)</span>
+  </h3>
+<pre class="literalblock">
+Add a new node &#64;elem as the previous sibling of &#64;cur
+merging adjacent TEXT nodes (&#64;elem may be freed) If the
+new node was already inserted in a document it is first
+unlinked from its existing context. If the new node is
+ATTRIBUTE, it is added into properties instead of
+children. If there is an attribute with equal name, it is
+first destroyed.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="addSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">addSibling</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>elem</span>)</span>
+  </h3>
+<pre class="literalblock">
+Add a new element &#64;elem to the list of siblings of &#64;cur
+merging adjacent TEXT nodes (&#64;elem may be freed) If the
+new element was already inserted in a document it is first
+unlinked from its existing context.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="copyNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">copyNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>extended</span>)</span>
+  </h3>
+<pre class="literalblock">
+Do a copy of the node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="copyNodeList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">copyNodeList</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Do a recursive copy of the node list.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="copyProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">copyProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Do a copy of the attribute.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="copyPropList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">copyPropList</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Do a copy of an attribute list.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDumpNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDumpNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>,
+          <span class=sig-arg>depth</span>)</span>
+  </h3>
+<pre class="literalblock">
+Dumps debug information for the element node, it is
+recursive
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDumpNodeList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDumpNodeList</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>,
+          <span class=sig-arg>depth</span>)</span>
+  </h3>
+<pre class="literalblock">
+Dumps debug information for the list of element node, it is
+recursive
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="debugDumpOneNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">debugDumpOneNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>,
+          <span class=sig-arg>depth</span>)</span>
+  </h3>
+<pre class="literalblock">
+Dumps debug information for the element node, it is not
+recursive
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="docCopyNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">docCopyNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>extended</span>)</span>
+  </h3>
+<pre class="literalblock">
+Do a copy of the node to a given document.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="docSetRootElement"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">docSetRootElement</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set the root element of the document (doc-&gt;children is a
+list containing possibly comments, PIs, etc ...).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="freeNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">freeNode</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Free a node, this is a recursive behaviour, all the
+children are freed too. This doesn't unlink the child from
+the list, use xmlUnlinkNode() first.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="freeNodeList"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">freeNodeList</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Free a node and all its siblings, this is a recursive
+behaviour, all the children are freed too.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getBase"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getBase</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches for the BASE URL. The code should work on both XML
+and HTML document even if base mechanisms are completely
+different. It returns the base as defined in RFC 2396
+sections 5.1.1. Base URI within Document Content and
+5.1.2. Base URI from the Encapsulating Entity However it
+does not return the document base (5.1.3), use
+xmlDocumentGetBase() for this
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getContent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getContent</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Read the value of a node, this can be either the text
+carried directly by this node if it's a TEXT node or the
+aggregate string of the values carried by this node
+child's (TEXT and ENTITY_REF). Entity references are
+substituted.
+</pre>
+  <dl><dt></dt><dd>
+    <dl><dt><b>Overrides:</b></dt>
+      <dd><a href="libxml2.xmlCore-class.html#get_content"><code>libxml2.xmlCore.get_content</code></a></dd>
+    </dl>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getLang"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getLang</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches the language of a node, i.e. the values of the
+xml:lang attribute or the one carried by the nearest
+ancestor.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="getSpacePreserve"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">getSpacePreserve</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Searches the space preserving behaviour of a node, i.e. the
+values of the xml:space attribute or the one carried by
+the nearest ancestor.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="hasNsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">hasNsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>nameSpace</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search for an attribute associated to a node This attribute
+has to be anchored in the namespace specified. This does
+the entity substitution. This function looks in DTD
+attribute declaration for #FIXED or default declaration
+values unless DTD use has been turned off.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="hasProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">hasProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search an attribute associated to a node This function also
+looks in DTD attribute declaration for #FIXED or default
+declaration values unless DTD use has been turned off.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isBlankNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isBlankNode</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Checks whether this node is an empty or whitespace only
+(and possibly ignorable) text-node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isID"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isID</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>attr</span>)</span>
+  </h3>
+<pre class="literalblock">
+Determine whether an attribute is of type ID. In case we
+have DTD(s) then this is done if DTD loading has been
+requested. In the case of HTML documents parsed with the
+HTML parser, then ID detection is done systematically.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isRef"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isRef</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>attr</span>)</span>
+  </h3>
+<pre class="literalblock">
+Determine whether an attribute is of type Ref. In case we
+have DTD(s) then this is simple, otherwise we use an
+heuristic: name Ref (upper or lowercase).
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="isText"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">isText</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Is this node a Text node ?
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lastChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lastChild</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search the last child of a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lineNo"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lineNo</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Get line number of &#64;node. This requires activation of this
+option before invoking the parser by calling
+xmlLineNumbersDefault(1)
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="listGetRawString"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">listGetRawString</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>inLine</span>)</span>
+  </h3>
+<pre class="literalblock">
+Builds the string equivalent to the text contained in the
+Node list made of TEXTs and ENTITY_REFs, contrary to
+xmlNodeListGetString() this function doesn't do any
+character encoding handling.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="listGetString"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">listGetString</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>inLine</span>)</span>
+  </h3>
+<pre class="literalblock">
+Build the string equivalent to the text contained in the
+Node list made of TEXTs and ENTITY_REFs
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lsCountNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lsCountNode</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Count the children of &#64;node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="lsOneNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">lsOneNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>output</span>)</span>
+  </h3>
+<pre class="literalblock">
+Dump to &#64;output the type and name of &#64;node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newChild</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>content</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creation of a new child element, added at the end of
+&#64;parent children list. &#64;ns and &#64;content parameters are
+optional (None). If &#64;ns is None, the newly created element
+inherits the namespace of &#64;parent. If &#64;content is non
+None, a child list containing the TEXTs and ENTITY_REFs
+node will be created. NOTE: &#64;content is supposed to be a
+piece of XML CDATA, so it allows entity references. XML
+special chars must be escaped first by using
+xmlEncodeEntitiesReentrant(), or xmlNewTextChild() should
+be used.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newNs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newNs</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>href</span>,
+          <span class=sig-arg>prefix</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creation of a new Namespace. This function will refuse to
+create a namespace with a similar prefix than an existing
+one present on this node. We use href==None in the case of
+an element creation where the namespace was not defined.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newNsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newNsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new property tagged with a namespace and carried
+by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newNsPropEatName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newNsPropEatName</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new property tagged with a namespace and carried
+by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new property carried by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="newTextChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">newTextChild</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>content</span>)</span>
+  </h3>
+<pre class="literalblock">
+Creation of a new child element, added at the end of
+&#64;parent children list. &#64;ns and &#64;content parameters are
+optional (None). If &#64;ns is None, the newly created element
+inherits the namespace of &#64;parent. If &#64;content is non
+None, a child TEXT node will be created containing the
+string &#64;content. NOTE: Use xmlNewChild() if &#64;content will
+contain entities that need to be preserved. Use this
+function, xmlNewTextChild(), if you need to ensure that
+reserved XML chars that might appear in &#64;content, such as
+the ampersand, greater-than or less-than signs, are
+automatically replaced by their XML escaped entity
+representations.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nodePath"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nodePath</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Build a structure based Path for the given node
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="noNsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">noNsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search and get the value of an attribute associated to a
+node This does the entity substitution. This function
+looks in DTD attribute declaration for #FIXED or default
+declaration values unless DTD use has been turned off.
+This function is similar to xmlGetProp except it will
+accept only an attribute in no namespace.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="ns"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">ns</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Get the namespace of a node
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nsDefs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nsDefs</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Get the namespace of a node
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="nsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">nsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>nameSpace</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search and get the value of an attribute associated to a
+node This attribute has to be anchored in the namespace
+specified. This does the entity substitution. This
+function looks in DTD attribute declaration for #FIXED or
+default declaration values unless DTD use has been turned
+off.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="prop"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">prop</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search and get the value of an attribute associated to a
+node This does the entity substitution. This function
+looks in DTD attribute declaration for #FIXED or default
+declaration values unless DTD use has been turned off.
+NOTE: this function acts independently of namespaces
+associated to the attribute. Use xmlGetNsProp() or
+xmlGetNoNsProp() for namespace aware processing.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="reconciliateNs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">reconciliateNs</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>)</span>
+  </h3>
+<pre class="literalblock">
+This function checks that all the namespaces declared
+within the given tree are properly declared. This is
+needed for example after Copy or Cut and then paste
+operations. The subtree may still hold pointers to
+namespace declarations outside the subtree or
+invalid/masked. As much as possible the function try to
+reuse the existing namespaces found in the new
+environment. If not possible the new namespaces are
+redeclared on &#64;tree at the top of the given subtree.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="replaceNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">replaceNode</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>cur</span>)</span>
+  </h3>
+<pre class="literalblock">
+Unlink the old node from its current context, prune the new
+one at the same place. If &#64;cur was already inserted in a
+document it is first unlinked from its existing context.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="searchNs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">searchNs</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>nameSpace</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search a Ns registered under a given name space for a
+document. recurse on the parents until it finds the
+defined namespace or return None otherwise. &#64;nameSpace can
+be None, this is a search for the default namespace. We
+don't allow to cross entities boundaries. If you don't
+declare the namespace within those you will be in troubles
+!!! A warning is generated to cover this case.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="searchNsByHref"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">searchNsByHref</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>href</span>)</span>
+  </h3>
+<pre class="literalblock">
+Search a Ns aliasing a given URI. Recurse on the parents
+until it finds the defined namespace or return None
+otherwise.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setBase"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setBase</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>uri</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set (or reset) the base URI of a node, i.e. the value of
+the xml:base attribute.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setContent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setContent</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>content</span>)</span>
+  </h3>
+<pre class="literalblock">
+Replace the content of a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setContentLen"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setContentLen</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>content</span>,
+          <span class=sig-arg>len</span>)</span>
+  </h3>
+<pre class="literalblock">
+Replace the content of a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setLang"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setLang</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>lang</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set the language of a node, i.e. the values of the xml:lang
+attribute.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setListDoc"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setListDoc</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>)</span>
+  </h3>
+<pre class="literalblock">
+update all nodes in the list to point to the right document
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setName"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setName</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set (or reset) the name of a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setNs"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setNs</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>)</span>
+  </h3>
+<pre class="literalblock">
+Associate a namespace to a node, a posteriori.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setNsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setNsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set (or reset) an attribute carried by a node. The ns
+structure must be in scope, this is not checked.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set (or reset) an attribute carried by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setSpacePreserve"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setSpacePreserve</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>val</span>)</span>
+  </h3>
+<pre class="literalblock">
+Set (or reset) the space preserving behaviour of a node,
+i.e. the value of the xml:space attribute.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="setTreeDoc"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">setTreeDoc</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>)</span>
+  </h3>
+<pre class="literalblock">
+update all nodes under the tree to point to the right
+document
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="shellPrintNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">shellPrintNode</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Print node to the output FILE
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="textConcat"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">textConcat</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>content</span>,
+          <span class=sig-arg>len</span>)</span>
+  </h3>
+<pre class="literalblock">
+Concat the given string at the end of the existing node
+content
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="textMerge"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">textMerge</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>second</span>)</span>
+  </h3>
+<pre class="literalblock">
+Merge two text nodes into one
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="unlinkNode"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">unlinkNode</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Unlink a node from it's current context, the node is not
+freed
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="unsetNsProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">unsetNsProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ns</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Remove an attribute carried by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="unsetProp"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">unsetProp</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>name</span>)</span>
+  </h3>
+<pre class="literalblock">
+Remove an attribute carried by a node.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="validNormalizeAttributeValue"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">validNormalizeAttributeValue</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>name</span>,
+          <span class=sig-arg>value</span>)</span>
+  </h3>
+<pre class="literalblock">
+Does the validation related extra step of the normalization
+of attribute values:  If the declared value is not CDATA,
+then the XML processor must further process the normalized
+attribute value by discarding any leading and trailing
+space (#x20) characters, and by replacing sequences of
+space (#x20) characters by single space (#x20) character.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xincludeProcessTree"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xincludeProcessTree</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Implement the XInclude substitution for the given subtree
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xincludeProcessTreeFlags"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xincludeProcessTreeFlags</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>flags</span>)</span>
+  </h3>
+<pre class="literalblock">
+Implement the XInclude substitution for the given subtree
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathCastNodeToNumber"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathCastNodeToNumber</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Converts a node to its number value
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathCastNodeToString"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathCastNodeToString</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Converts a node to its string value.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathCmpNodes"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathCmpNodes</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>node2</span>)</span>
+  </h3>
+<pre class="literalblock">
+Compare two nodes w.r.t document order
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNewNodeSet"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNewNodeSet</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type NodeSet and
+initialize it with the single Node &#64;val
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNewValueTree"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNewValueTree</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type Value Tree (XSLT)
+and initialize it with the tree root &#64;val
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextAncestor"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextAncestor</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;ancestor&quot; direction the
+ancestor axis contains the ancestors of the context node;
+the ancestors of the context node consist of the parent of
+context node and the parent's parent and so on; the nodes
+are ordered in reverse document order; thus the parent is
+the first node on the axis, and the parent's parent is the
+second node on the axis
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextAncestorOrSelf"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextAncestorOrSelf</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;ancestor-or-self&quot; direction he
+ancestor-or-self axis contains the context node and
+ancestors of the context node in reverse document order;
+thus the context node is the first node on the axis, and
+the context node's parent the second; parent here is
+defined the same as with the parent axis.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextAttribute"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextAttribute</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;attribute&quot; direction TODO:
+support DTD inherited default attributes
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextChild"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextChild</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;child&quot; direction The child axis
+contains the children of the context node in document
+order.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextDescendant"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextDescendant</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;descendant&quot; direction the
+descendant axis contains the descendants of the context
+node in document order; a descendant is a child or a child
+of a child and so on.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextDescendantOrSelf"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextDescendantOrSelf</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;descendant-or-self&quot; direction
+the descendant-or-self axis contains the context node and
+the descendants of the context node in document order;
+thus the context node is the first node on the axis, and
+the first child of the context node is the second node on
+the axis
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextFollowing"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextFollowing</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;following&quot; direction The
+following axis contains all nodes in the same document as
+the context node that are after the context node in
+document order, excluding any descendants and excluding
+attribute nodes and namespace nodes; the nodes are ordered
+in document order
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextFollowingSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextFollowingSibling</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;following-sibling&quot; direction
+The following-sibling axis contains the following siblings
+of the context node in document order.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextNamespace"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextNamespace</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;namespace&quot; direction the
+namespace axis contains the namespace nodes of the context
+node; the order of nodes on this axis is
+implementation-defined; the axis will be empty unless the
+context node is an element  We keep the XML namespace node
+at the end of the list.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextParent"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextParent</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;parent&quot; direction The parent
+axis contains the parent of the context node, if there is
+one.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextPreceding"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextPreceding</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;preceding&quot; direction the
+preceding axis contains all nodes in the same document as
+the context node that are before the context node in
+document order, excluding any ancestors and excluding
+attribute nodes and namespace nodes; the nodes are ordered
+in reverse document order
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextPrecedingSibling"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextPrecedingSibling</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;preceding-sibling&quot; direction
+The preceding-sibling axis contains the preceding siblings
+of the context node in reverse document order; the first
+preceding sibling is first on the axis; the sibling
+preceding that node is the second on the axis and so on.
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpathNextSelf"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpathNextSelf</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>ctxt</span>)</span>
+  </h3>
+<pre class="literalblock">
+Traversal function for the &quot;self&quot; direction The self axis
+contains just the context node itself
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerNewCollapsedRange"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerNewCollapsedRange</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type range using a single
+nodes
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerNewContext"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerNewContext</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>doc</span>,
+          <span class=sig-arg>origin</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new XPointer context
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerNewLocationSetNodes"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerNewLocationSetNodes</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>end</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type LocationSet and
+initialize it with the single range made of the two nodes
+&#64;start and &#64;end
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerNewRange"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerNewRange</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>startindex</span>,
+          <span class=sig-arg>end</span>,
+          <span class=sig-arg>endindex</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type range
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="xpointerNewRangeNodes"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class="sig"><span class="sig-name">xpointerNewRangeNodes</span>(<span class=sig-arg>self</span>,
+          <span class=sig-arg>end</span>)</span>
+  </h3>
+<pre class="literalblock">
+Create a new xmlXPathObjectPtr of type range using 2 nodes
+</pre>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar" align="right" width="100%">
+      <table border="0" cellpadding="0" cellspacing="0">
+      <tr><th class="navbar" align="center">
+        <p class="nomargin">
+          <a class="navbar" target="_top" href="http://pyxmlsec.labs.libre-entreprise.org">PyXMLSec</a>
+      </p></th></tr></table>
+    </th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 2.1 on Sun Jan  1 18:42:41 2006</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>
